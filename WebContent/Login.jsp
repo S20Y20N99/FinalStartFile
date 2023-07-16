@@ -23,12 +23,13 @@
 		margin: auto;
 		width: 600px;
 		height: 400px;
-		justify-content: center;
-		align-items: center;
+		/* justify-content: center;
+		align-items: center; */
 	}
 	
 	#logoArea
 	{
+		padding:
 		width: 250px;
 		height: 400px;
 		float: left;
