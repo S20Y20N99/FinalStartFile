@@ -12,6 +12,7 @@
 	
 	<style type="text/css">
 		
+		/* vw, vh 써도 스크롤바 생기는거 방지 */
 		body
 		{
 			margin: 0;
@@ -20,6 +21,7 @@
 		/* 전체 */
 		#fullscreen 
 		{
+			/* vw, vh 가 창에 맞춰서 세팅하는 % 개념 */
 			width: 100vw;
         	height: 100vh;
 			display: flex;
@@ -38,9 +40,9 @@
 			width: 400px;
 			height: 400px;
 			float:left;
-			/*vertical-align:middle;*/
 		}
 		
+		/* 로고 이미지 최대 크기 고정 */
 		#logo
 		{
 			max-height: 350px;
@@ -95,7 +97,7 @@
 			width: 280px;
 			height: 30px;
 			margin: 5px;
-			border-radius: 15px;
+			border-radius: 10px;
 		}
 		
 		/* loginBtn */
@@ -122,6 +124,7 @@
 			background-color: #EDE9D0;
 			color: #3A001E;
 			cursor: pointer;
+			font-weight: bold;
 		}
 	
 		.Btn:hover {
@@ -149,7 +152,7 @@
 					<input type="password" id="userPw" name="userPw" placeholder=" 사용자 PW">
 				</div>
 				<div id="loginBtnDiv">
-					<input type="button" id="loginBtn" name="loginBtn" class="Btn" value="Login">
+					<input type="button" id="loginBtn" name="loginBtn" class="Btn" value="LOGIN">
 				</div>
 			</div>
 			
