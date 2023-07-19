@@ -54,14 +54,14 @@
 	
 	#loginDiv
 	{
-		width: 285px;
-		height: 75px;
+		width: 400px;
+		height: 80px;
 		float: top;
 	}
 	
 	#joinAndSearch
 	{
-		width: 350px;
+		width: 400px;
 		height: 50px;
 		float: bottom;
 	}
@@ -84,7 +84,7 @@
 	
 	#loginBtnDiv
 	{
-		width: 80px;
+		width: 150px;
 		height: 60px;
 		float: right;
 	}
@@ -92,30 +92,45 @@
 	
 	#user
 	{
-		width: 180px;
+		width: 250px;
 		height: 70px;
 		float: left;
 	}
 	
 	#userId, #userPw
 	{
-		width: 190px;
+		width: 220px;
 		height: 30px;
 		margin: 3px;
+		margin-left: 20px;
+		font-size: 10pt;
 	}
 	
 	#loginBtn
 	{
 		width: 76px;
-		height: 67px;
+		height: 66px;
 		margin-top: 3px;
+		margin-right: 20px;
+		font-weight: bold;
+		font-size: 10pt;
 	}
 
 	#joinBtn, #searchBtn
 	{
-		width: 93px;
-		height: 25px;
+		width: 107px;
+		height: 28px;
 		margin: 2px;
+		font-weight: bold;
+		font-size: 9pt;
+		text-align: center;
+		
+	}
+	
+	#joinBtn
+	{
+		margin-left: 20px;
+	
 	}
 	
 </style>
@@ -146,8 +161,8 @@
 			</div>
 
 			<div id="joinAndSearch">
-				<input type="button" id="joinBtn" name="joinBtn" class="Btn" value="회원가입">
-				<input type="button" id="searchBtn" name="searchBtn" class="Btn" value="정보찾기">
+				<button type="button" id="joinBtn" name="joinBtn" class="btn btn-outline-danger">회원가입</button>
+				<button type="button" id="searchBtn" name="searchBtn" class="btn btn-outline-danger">정보찾기</button>
 			</div>
 		</form>
 	</div>
