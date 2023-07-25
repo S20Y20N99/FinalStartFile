@@ -14,7 +14,55 @@
 <!-- jquery -->
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="<%=cp %>/css/MY_personal_main(0725_1).css">
+<style type="text/css">
+
+	header
+	{
+		display: flex;
+		justify-content: space-between;
+		width: 90vw;
+		height: 8vh;
+		margin-top: 3vh;
+		margin-left: 6vw;
+		margin-right: 4vw;
+	}
+	
+	 .logo
+	{
+		max-width: 5vw;
+		max-height: 7vw;
+	}
+	
+	
+	.menu
+	{
+		display: flex;
+		justify-content: space-evenly;
+		width: 25vw;
+	}
+	
+	.cl
+	{
+		font-size: 0.8vw;
+	}
+	
+	#mypagetxt
+	{
+		font-size: 1vw;
+	}
+	
+	#mypage a, #main a, #logout a, #alarm a, #stMain a
+	{
+		text-decoration: none;
+		color: #3a001e;
+	}
+	
+	#mypage a
+	{
+		font-weight: bold;
+	}
+
+</style>
 
 </head>
 

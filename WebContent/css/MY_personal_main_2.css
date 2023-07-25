@@ -17,7 +17,7 @@ body
 
 /* 메인으로 가는 로고가 필요한 페이지에 이용할 header */
 /* 주석처리 header, .logo, .menu, .cl, #mypage...*/
-
+/*
 header
 {
 	display: flex;
@@ -63,6 +63,7 @@ header
 {
 	font-weight: bold;
 }
+*/
 
 /* ---------------------------------------------------------- */
 /* main 영역 */
@@ -572,7 +573,7 @@ input::placeholder
 
 /*--------------------------------------------------------------------*/
 /* footer 영역 */
-
+/*
 footer
 {
 	display: flex;
@@ -610,3 +611,4 @@ footer
 	font-family: 'IBM Plex Sans KR', sans-serif;
 	cursor: pointer;
 }
+*/

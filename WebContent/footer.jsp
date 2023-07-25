@@ -14,7 +14,45 @@
 <!-- jquery -->
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="<%=cp %>/css/MY_personal_main(0725_1).css">
+<style type="text/css">
+	footer
+	{
+		display: flex;
+		justify-content: space-around;
+		width: 97vw;
+		height: 40vh;
+		font-size: 0.8vw;
+		color: #9b9b9b;
+		background-color: #f9f9f9;
+		padding-top: 25vh;
+		padding-left: 3vw;
+		margin-top: 5vh;
+		
+	}
+	
+	.ftNav
+	{
+		padding-top: 5vh;
+		padding-left: 4.5vw;
+	}
+	
+	.ftStAdd
+	{
+		padding-top: 5vh;
+		padding-right: 4vw;
+	}
+	
+	#fsa
+	{
+		background-color: #EF6351;
+		border: 1px #EF6351;
+		border-radius: 8px;
+		color: white;
+		font-size: 10pt;
+		font-family: 'IBM Plex Sans KR', sans-serif;
+		cursor: pointer;
+	}
+</style>
 
 </head>
 
