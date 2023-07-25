@@ -22,6 +22,29 @@
 </head>
 <body>
 
+<header>
+		<div class="Logo">
+			<img class="logo" src="<%=cp%>/images/logo_text.png">
+		</div>
+		<div class="menu">
+			<div id="mypage">
+				<a href="" class="cl" id="mypagetxt">홍길동(먹짱)</a>			
+			</div>
+			<div id="main">
+				<a href="" class="cl">메인으로</a>
+			</div>
+			<div id="logout">
+				<a href="" class="cl">로그아웃</a>
+			</div>
+			<div id="alarm">
+				<a href="" class="cl">알림</a>
+			</div>
+			<div id="stMain">
+				<a href="" class="cl">사업자메인페이지</a>
+			</div>
+		</div>
+</header>
+
 <div class=container>
 
 	<!-- 비교함 외의 영역 -->
@@ -97,7 +120,9 @@
 			
 			<!-- 검색버튼 -->
 			<div id="searchBtnDiv">
-				<button type="button" id="searchBtn" name="searchBtn">SEARCH</button>
+				<button type="button" id="searchBtn" name="searchBtn">					
+					<img id="searchIcon" src="<%=cp %>/images/search_icon.png">
+				</button>
 			</div>
 			
 		</div>
@@ -134,8 +159,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>				
 							</div>
 
 						</div>
@@ -161,8 +186,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>	
 							</div>
 
 						</div>
@@ -188,8 +213,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>					
 							</div>
 
 						</div>
@@ -215,8 +240,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -242,8 +267,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>					
 							</div>
 
 						</div>
@@ -277,8 +302,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -304,8 +329,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -331,8 +356,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -358,8 +383,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>							
 							</div>
 
 						</div>
@@ -385,8 +410,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>					
 							</div>
 
 						</div>
@@ -420,8 +445,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>					
 							</div>
 
 						</div>
@@ -447,8 +472,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -474,8 +499,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -501,8 +526,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -528,8 +553,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -707,6 +732,29 @@
 	</div>
 
 </div>
+
+<footer>
+	<div class="ftCompany">
+		회사정보<br>
+		상호 : 레드홀릭<br>
+		대표 : 한종훈<br>
+		주소 : 서울 성동구 성덕정 5길 10, 1층<br>
+		개인정보관리 책임자 : 이숙희 (madhjh@redholic.com)<br>
+	</div>
+	
+	<div class="ftNav">
+		회사소개   |   쇼핑가이드   |   개인정보보호정책   |   이용약관
+	</div>
+	
+	<div class="ftCs">
+	
+	</div>
+	
+	<div class="ftStAdd">
+		<button type="button" id="fsa" class="fsaBtn">사업자 등록하기</button>
+	</div>
+
+</footer>
 
 </body>
 </html>
