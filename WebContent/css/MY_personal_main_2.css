@@ -12,6 +12,63 @@ body
 	font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
+/* -------------------------------------------------------------- */
+/* header 영역*/
+
+/* 메인으로 가는 로고가 필요한 페이지에 이용할 header */
+/* 주석처리 header, .logo, .menu, .cl, #mypage...*/
+/*
+header
+{
+	display: flex;
+	justify-content: space-between;
+	width: 90vw;
+	height: 8vh;
+	margin-top: 3vh;
+	margin-left: 6vw;
+	margin-right: 4vw;
+}
+
+ .logo
+{
+	max-width: 5vw;
+	max-height: 7vw;
+}
+
+
+.menu
+{
+	display: flex;
+	justify-content: space-evenly;
+	width: 25vw;
+}
+
+.cl
+{
+	font-size: 0.8vw;
+}
+
+#mypagetxt
+{
+	font-size: 1vw;
+}
+
+#mypage a, #main a, #logout a, #alarm a, #stMain a
+{
+	text-decoration: none;
+	color: #3a001e;
+}
+
+#mypage a
+{
+	font-weight: bold;
+}
+*/
+
+/* ---------------------------------------------------------- */
+/* main 영역 */
+
+
 /* 전체 container DIV*/
 .container
 {
@@ -34,14 +91,13 @@ body
 /* mainlogo + 검색창 + 검색버튼 DIV*/
 #searchArea
 {
-	margin-top: 80px; /*임시*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	max-width: 88vw;
 	height: 600px;
-	background-color: #EDE9D0;
+	background-color: #f7f4ea;
 }
 
 /* mainlogo img DIV */
@@ -90,6 +146,20 @@ input::placeholder
 	font-size: 10pt;
 }
 
+/* 검색 창 focus 시 색 변경 */
+#typingArea:focus
+{
+	width: 430px;
+	height: 35px;
+	float: right;
+	outline: none; 
+	border-color: #ef6351; 
+	box-shadow: 0 0 10px #ef6351;
+  	text-align: center;
+}
+
+/* 체크박스 ---------------------------------------------------------- */
+
 /* 지역+음식카테고리+가게키워드 체크박스 전체 영역 DIV */
 #checkRegion, #checkCat, #checkStKey
 {
@@ -127,19 +197,21 @@ input::placeholder
 	top: 0.1vw;
 }
 
+/* ----------------------------------------------------------체크박스 */
+
+
 /* 검색 버튼 DIV */
 #searchBtnDiv
 {
 	height: 60px;
 	padding-top: 20px;
-	
 }
 
 /* 검색 버튼 */
 #searchBtn
 {
-	width: 75px;
-	height: 37px;
+	width: 40px;
+	height: 38px;
 	float: left;
 	align-content: center;
 	font-size: 10pt;
@@ -147,7 +219,46 @@ input::placeholder
   	border-radius: 8px;
   	background-color: #ef6351;
   	color: white;
+  	cursor: pointer;
 }
+
+/* 검색 버튼 아이콘 이미지 */
+#searchIcon
+{
+	max-width: 20px;
+	max-height: 20px;
+	object-fit: cover;
+}
+
+/* 검색 버튼 hover 시 색 변경 */
+#searchBtn:hover
+{
+	width: 40px;
+	height: 38px;
+	float: left;
+	align-content: center;
+	font-size: 10pt;
+	outline: none; 
+	border-color: #ef6351; 
+	box-shadow: 0 0 10px #ef6351;
+}
+
+/* 검색 버튼 active 시 색 변경 */
+#searchBtn:active
+{
+	width: 40px;
+	height: 38px;
+	float: left;
+	align-content: center;
+	font-size: 10pt;
+	outline: none; 
+	background-color: #e73d34;
+	border-color: #e73d34; 
+	color: #ef6351;
+	box-shadow: 0 0 10px #ef6351;
+}
+
+
 
 /* 가게 검색 결과 구역 DIV(검색결과/더보기 + searchList1,2,3 */
 #resultStDiv
@@ -225,7 +336,7 @@ input::placeholder
 .storeList
 {
 	max-width: 80vw;
-	height: 300px;
+	height: 45vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -242,35 +353,33 @@ input::placeholder
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
-	width: 230px;
-	height: 280px;
+	width: 250px;
+	height: 270px;
 	margin-right: 5px;
 	margin-left: 8px;
 	/*border: 1px solid #ef6351;*/
 	border-radius: 5px;
-	background-color: #EDE9D0;
+	background-color: #f7f4ea;
 }
 
 /* 한 가게 이미지 + 찜, 비교함 버튼 구역 DIV */
 .stImgBtnDiv
 {
-	width: 225px;
-	height: 280px;
+	width: 230px;
+	height: 220px;
 	display: flex;
 	flex-direction: column;
-   	justify-content: flex-end;
    	align-items: center;
-   	border-radius: 5px;
-	background-color: #ef6351;
+   	padding-top: 5px;
 }
 
 /* 한 가게 이미지 구역 DIV */
 .stImgDiv img
 {
-	width: 215px;
-	height: 210px;
-	padding-top: 5px;
+	width: 230px;
+	height: 230px;
 	object-fit: cover;
+	cursor: pointer;
 }
 
 /* 한 가게 찜, 비교함 추가 버튼 구역 DIV*/
@@ -278,33 +387,53 @@ input::placeholder
 {
 	width: 215px;
 	height: 25px;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
 	padding-top: 2px;
 	padding-bottom: 5px;
 	display: flex;
 	flex-direction: row;
    	justify-content: space-between;
+   	position: relative;
+   	bottom: 225px;
 }
 
 /* 찜버튼, 비교함추가 버튼 */
-.likeAddBtn, .comAddBtn
+.likeAddBtn
 {
 	width: 30px;
-	height: 20px;
+	height: 30px;
+	margin-right: 5px;
+	padding-left: 2px;
 	text-align: center;
-	font-size:5pt;
-	border-radius: 60px;
-	border : 1px #EDE9D0;
-	background-color: #EDE9D0;
+	font-size: 18pt;
+	background-color: transparent;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+.comAddBtn
+{
+	width: 25px;
+	height: 25px;
+	margin-top: 5px;
+	margin-left: 5px;
+	text-align: center;
+	font-size: 15pt;
+	border-radius: 50px;
+	background-color: #f17867;
+	border: 1px solid #f17867;
+	cursor: pointer;
+	color: white;
 }
 
 
 /* 가게 대표이미지 크기 조정 */
 .stImg
 {
-	max-width: 215px;
-	max-height: 200px;
+	max-width: 220px;
+	max-height: 220px;
 	border-radius: 5px;
 	background-size: cover;
 	/* border: 1px solid #ef6351;
@@ -315,9 +444,9 @@ input::placeholder
 /* 가게명 + 평점(리뷰수) 구역 DIV */
 .name_reviewDiv
 {
-	padding-top: 5px;
+	padding-top: 3px;
 	display: flex;
-	width: 220px;
+	width: 210px;
 	height: 40px;
 	margin-left: 3px;
 	margin-right: 2px;
@@ -344,7 +473,7 @@ input::placeholder
 	margin-left: 2vw;
 	padding-left: 1vw;
 	padding-right: 1vw;
-	background-color: #EDE9D0;
+	background-color: #f7f4ea;
 }
 
 /* '비교함' 이름 영역 */
@@ -440,3 +569,46 @@ input::placeholder
 	font-size: 10pt;
 	font-family: 'IBM Plex Sans KR', sans-serif;
 }
+
+
+/*--------------------------------------------------------------------*/
+/* footer 영역 */
+/*
+footer
+{
+	display: flex;
+	justify-content: space-around;
+	width: 97vw;
+	height: 40vh;
+	font-size: 0.8vw;
+	color: #9b9b9b;
+	background-color: #f9f9f9;
+	padding-top: 25vh;
+	padding-left: 3vw;
+	margin-top: 5vh;
+	
+}
+
+.ftNav
+{
+	padding-top: 5vh;
+	padding-left: 4.5vw;
+}
+
+.ftStAdd
+{
+	padding-top: 5vh;
+	padding-right: 4vw;
+}
+
+#fsa
+{
+	background-color: #EF6351;
+	border: 1px #EF6351;
+	border-radius: 8px;
+	color: white;
+	font-size: 10pt;
+	font-family: 'IBM Plex Sans KR', sans-serif;
+	cursor: pointer;
+}
+*/

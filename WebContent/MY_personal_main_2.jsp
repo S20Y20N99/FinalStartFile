@@ -22,6 +22,8 @@
 </head>
 <body>
 
+<c:import url="header_store.jsp"></c:import>
+
 <div class=container>
 
 	<!-- 비교함 외의 영역 -->
@@ -97,7 +99,9 @@
 			
 			<!-- 검색버튼 -->
 			<div id="searchBtnDiv">
-				<button type="button" id="searchBtn" name="searchBtn">SEARCH</button>
+				<button type="button" id="searchBtn" name="searchBtn">					
+					<img id="searchIcon" src="<%=cp %>/images/search_icon.png">
+				</button>
 			</div>
 			
 		</div>
@@ -134,8 +138,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>				
 							</div>
 
 						</div>
@@ -161,8 +165,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>	
 							</div>
 
 						</div>
@@ -188,8 +192,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>					
 							</div>
 
 						</div>
@@ -215,8 +219,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -242,8 +246,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>					
 							</div>
 
 						</div>
@@ -277,8 +281,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -304,8 +308,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -331,8 +335,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -358,8 +362,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>							
 							</div>
 
 						</div>
@@ -385,8 +389,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>					
 							</div>
 
 						</div>
@@ -420,8 +424,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>					
 							</div>
 
 						</div>
@@ -447,8 +451,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -474,8 +478,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -501,8 +505,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -528,8 +532,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -707,6 +711,8 @@
 	</div>
 
 </div>
+
+<c:import url="footer.jsp"></c:import>
 
 </body>
 </html>

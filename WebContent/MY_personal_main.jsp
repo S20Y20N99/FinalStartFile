@@ -15,12 +15,13 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="<%=cp %>/css/MY_personal_main.css">
-<%-- <link rel="stylesheet" type="text/css" href="<%=cp %>/css/styles.css"> --%>
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
- -->
- 
+
 </head>
+
 <body>
+
+
+<c:import url="header_user.jsp"></c:import>
 
 <div class=container>
 
@@ -40,7 +41,9 @@
 				<!-- 검색창 -->
 				<input type="text" id="typingArea" name="typingArea" class="insert" placeholder="검색어를 입력해주세요.">
 				<!-- 검색버튼 -->
-				<button type="button" id="searchBtn" name="searchBtn">SEARCH</button>
+				<button type="button" id="searchBtn" name="searchBtn">
+					<img id="searchIcon" src="<%=cp %>/images/search_icon.png">
+				</button>
 			</div>
 		</div>
 		
@@ -52,7 +55,7 @@
 			<!-- 입맛키워드기반 추천 -->
 			<div id="personalIbmatDiv">
 				<div class="recommendName fa-solid">
-					▼ <span style="color: #ef6351">입맛</span>에 기반을 둔 추천
+					▼ <span>입맛</span>에 기반을 둔 추천
 				</div>
 				
 				<!-- 가게 구역 -->
@@ -66,8 +69,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>					
 							</div>
 
 						</div>
@@ -80,7 +83,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div>
@@ -93,8 +96,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>					
 							</div>
 
 						</div>
@@ -107,7 +110,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div>
@@ -120,8 +123,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>					
 							</div>
 
 						</div>
@@ -134,7 +137,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div>
@@ -147,8 +150,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -161,7 +164,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div><!-- store end -->
@@ -174,8 +177,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -188,7 +191,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div><!-- store end -->
@@ -199,7 +202,7 @@
 			<div id="personalLike">
 		
 				<div class="recommendName">
-					▼ <span style="color: #ef6351">찜</span>에 기반을 둔 추천
+					▼ <span>찜</span>에 기반을 둔 추천
 				</div>
 				
 				<!-- 가게 구역 -->
@@ -213,8 +216,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>					
 							</div>
 
 						</div>
@@ -227,7 +230,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div>
@@ -240,8 +243,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -254,7 +257,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div>
@@ -267,8 +270,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>					
 							</div>
 
 						</div>
@@ -281,7 +284,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div>
@@ -294,8 +297,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -308,7 +311,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div><!-- store end -->
@@ -321,8 +324,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>					
 							</div>
 
 						</div>
@@ -335,7 +338,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div><!-- store end -->
@@ -345,7 +348,7 @@
 			<!-- 요즘 뜨는 가게들 -->
 			<div id="famousSt">
 				<div class="recommendName">
-					▼ <span style="color: #ef6351">요즘 뜨는</span> 가게 추천
+					▼ <span>요즘 뜨는</span> 가게 추천
 				</div>
 				
 				<!-- 가게 구역 -->
@@ -359,8 +362,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -373,7 +376,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div>
@@ -386,8 +389,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>					
 							</div>
 
 						</div>
@@ -400,7 +403,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div>
@@ -413,8 +416,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -427,7 +430,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div>
@@ -440,8 +443,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -454,7 +457,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div><!-- store end -->
@@ -467,8 +470,8 @@
 							</div>
 							
 							<div class="likeComAddBtn">
-								<button type="button" class="likeAddBtn">♡</button>	
-								<button type="button" class="comAddBtn">+</button>						
+								<button type="button" class="comAddBtn">+</button>
+								<button type="button" class="likeAddBtn">❤️</button>						
 							</div>
 
 						</div>
@@ -481,7 +484,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div><!-- store end -->
@@ -508,8 +511,9 @@
 				<div class="comStoreDiv">
 					<!-- 한 가게 대표사진 영역 -->
 					<div class="comStoreImgDiv">
-						<input type="checkbox" class="comStImgCB" id="st1">
-						<label for="st1" class="stLabel"> 
+						<label for="st1" class="stLabel">
+							<input type="checkbox" class="comStImgCB" id="st1">
+							<!-- <span class="circle"></span> -->
 							<img class="comStImg" src="<%=cp%>/images/store_img01.png">
 						</label>
 					</div>
@@ -644,8 +648,10 @@
 		</div>
 		
 	</div>
-
+	
 </div>
+
+<c:import url="footer.jsp"></c:import>	
 
 </body>
 </html>
