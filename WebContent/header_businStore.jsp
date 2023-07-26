@@ -9,7 +9,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>user store</title>
+<title>user(business) store</title>
 
 <!-- jquery -->
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
@@ -77,25 +77,29 @@
 
 </style>
 
+
 </head>
 
 <body>
-<!-- 사용구역 : 관리자페이지 -->
+<!-- 사용구역: 개인(사업자○)이 보는 메인페이지 + 검색 후 페이지 -->
 <header>
 	<div>
 		<a href="" class="gotoMain">
-			<img class="gotoMainImg" src = "<%=cp %>/images/logo_text.png">
+			<img class="gotoMainImg" src ="<%=cp %>/images/logo_text.png">
 		</a>
 	</div>
 	<div class="menu">
 		<div id="mypage">
-			<a href="" class="cl" id="mypagetxt">이순신(관리자)님</a>			
+			<a href="" class="cl" id="mypagetxt">홍길동(먹짱)</a>			
 		</div>
 		<div id="logout">
 			<a href="" class="cl">로그아웃</a>
 		</div>
-<!-- 		<div id="alarm">
+		<div id="alarm">
 			<a href="" class="cl">알림</a>
-		</div> -->
+		</div>
+		<div id="stMain">
+			<a href="" class="cl">사업자메인페이지</a>
+		</div>
 	</div>
 </header>

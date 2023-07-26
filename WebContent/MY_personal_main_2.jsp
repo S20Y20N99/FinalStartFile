@@ -15,14 +15,11 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="<%=cp %>/css/MY_personal_main_2.css">
-<%-- <link rel="stylesheet" type="text/css" href="<%=cp %>/css/styles.css"> --%>
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
- -->
- 
+
 </head>
 <body>
 
-<c:import url="header_store.jsp"></c:import>
+<c:import url="header_userMain.jsp"></c:import>
 
 <div class=container>
 
@@ -152,7 +149,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div>
@@ -179,7 +176,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div>
@@ -206,7 +203,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div>
@@ -233,7 +230,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div><!-- store end -->
@@ -260,7 +257,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div><!-- store end -->
@@ -295,7 +292,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div>
@@ -322,7 +319,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div>
@@ -349,7 +346,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div>
@@ -376,7 +373,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div><!-- store end -->
@@ -403,14 +400,13 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div><!-- store end -->
 				</div><!-- storeList end -->
 			</div><!-- searchList2 end -->
 			
-			<!-- 요즘 뜨는 가게들 -->
 			<div id="searchList3">
 				
 				<!-- 가게 구역 -->
@@ -438,7 +434,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div>
@@ -465,7 +461,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div>
@@ -492,7 +488,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div>
@@ -519,7 +515,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div><!-- store end -->
@@ -546,7 +542,7 @@
 							
 							 <!-- 별점 평점(리뷰 수) -->
 							<div class="startReviewDivs">
-								4.5(450)
+								<span>4.5</span>(450)
 							</div>
 						</div>
 					</div><!-- store end -->

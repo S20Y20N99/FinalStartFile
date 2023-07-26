@@ -19,14 +19,13 @@
 	{
 		display: flex;
 		justify-content: space-around;
-		width: 97vw;
-		height: 40vh;
+		width: 96vw;
+		height: 20vh;
 		font-size: 0.8vw;
 		color: #9b9b9b;
 		background-color: #f9f9f9;
-		padding-top: 25vh;
+		padding-top: 10vh;
 		padding-left: 3vw;
-		margin-top: 5vh;
 		
 	}
 	

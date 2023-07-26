@@ -8,36 +8,34 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Main Page</title>
-
-<!-- jquery -->
-<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<title>user main</title>
 
 <style type="text/css">
 
+	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500&display=swap');
+	
+	body
+	{
+		font-family: 'IBM Plex Sans KR', sans-serif;
+	}
+		
+	
 	header
 	{
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
+		align-items: center;
 		width: 90vw;
 		height: 8vh;
-		margin-top: 3vh;
+		margin-top: 1vh;
 		margin-left: 6vw;
 		margin-right: 4vw;
 	}
-	
-	 .logo
-	{
-		max-width: 5vw;
-		max-height: 7vw;
-	}
-	
-	
 	.menu
 	{
 		display: flex;
 		justify-content: space-evenly;
+		align-items: center;
 		width: 25vw;
 	}
 	
@@ -49,17 +47,13 @@
 	#mypagetxt
 	{
 		font-size: 1vw;
+		font-weight: bold;
 	}
 	
-	#mypage a, #main a, #logout a, #alarm a, #stMain a
+	#mypage a, #logout a, #alarm a
 	{
 		text-decoration: none;
 		color: #3a001e;
-	}
-	
-	#mypage a
-	{
-		font-weight: bold;
 	}
 
 </style>
@@ -67,11 +61,11 @@
 </head>
 
 <body>
-
+<!-- 사용구역 : 개인(사업자X)이 보는 메인페이지 + 검색 후 페이지 -->
 <header>
 		<div class="menu">
 			<div id="mypage">
-				<a href="" class="cl" id="mypagetxt">○○○님(먹잘알)</a>			
+				<a href="" class="cl" id="mypagetxt">홍길동(먹짱)</a>			
 			</div>
 			<div id="logout">
 				<a href="" class="cl">로그아웃</a>
@@ -79,8 +73,9 @@
 			<div id="alarm">
 				<a href="" class="cl">알림</a>
 			</div>
-			<div id="stMain">
-				<a href="" class="cl">사업자 메인페이지</a>
-			</div>
 		</div>
 </header>
+
+</body>
+
+</html>
