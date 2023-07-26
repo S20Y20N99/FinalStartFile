@@ -8,11 +8,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>user store</title>
-
-<!-- jquery -->
-<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 
 <style type="text/css">
 
@@ -23,6 +19,7 @@
 		font-family: 'IBM Plex Sans KR', sans-serif;
 	}
 		
+	
 	header
 	{
 		display: flex;
@@ -62,17 +59,13 @@
 	#mypagetxt
 	{
 		font-size: 1vw;
+		font-weight: bold;
 	}
 	
-	#mypage a, #main a, #logout a, #alarm a, #stMain a
+	#mypage a, #logout a, #alarm a
 	{
 		text-decoration: none;
 		color: #3a001e;
-	}
-	
-	#mypage a
-	{
-		font-weight: bold;
 	}
 
 </style>
@@ -80,22 +73,26 @@
 </head>
 
 <body>
-<!-- 사용구역 : 관리자페이지 -->
+<!-- 사용구역 : 개인(사업자X)이 보는 메인페이지 외의 구역 -->
 <header>
 	<div>
 		<a href="" class="gotoMain">
-			<img class="gotoMainImg" src = "<%=cp %>/images/logo_text.png">
+			<img class="gotoMainImg" src ="<%=cp %>/images/logo_text.png">
 		</a>
 	</div>
 	<div class="menu">
 		<div id="mypage">
-			<a href="" class="cl" id="mypagetxt">이순신(관리자)님</a>			
+			<a href="" class="cl" id="mypagetxt">홍길동(먹짱)</a>			
 		</div>
 		<div id="logout">
 			<a href="" class="cl">로그아웃</a>
 		</div>
-<!-- 		<div id="alarm">
+		<div id="alarm">
 			<a href="" class="cl">알림</a>
-		</div> -->
+		</div>
 	</div>
 </header>
+
+</body>
+
+</html>

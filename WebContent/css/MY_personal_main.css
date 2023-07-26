@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-/* font-family: 'IBM Plex Sans KR', sans-serif; */
-/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
- */ 
+/* 사용할 때 구문 : font-family: 'IBM Plex Sans KR', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500&display=swap');
 
 /* 전체 스크롤 없앰 */
@@ -13,7 +11,7 @@ body
 }
 /* -------------------------------------------------------------- */
 /* header 영역*/
-
+/*import해서 주석처리*/
 /* 메인으로 가는 로고가 필요한 페이지에 이용할 header */
 /* 주석처리 .header, .logo, .menu, .cl, #mypage...*/
 /*
@@ -554,7 +552,7 @@ span
 
 /*--------------------------------------------------------------------*/
 /* footer 영역 */
-/*
+/* import해서 주석처리
 footer
 {
 	display: flex;

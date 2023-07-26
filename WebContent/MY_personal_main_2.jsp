@@ -15,14 +15,11 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="<%=cp %>/css/MY_personal_main_2.css">
-<%-- <link rel="stylesheet" type="text/css" href="<%=cp %>/css/styles.css"> --%>
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
- -->
- 
+
 </head>
 <body>
 
-<c:import url="header_store.jsp"></c:import>
+<c:import url="header_userMain.jsp"></c:import>
 
 <div class=container>
 
