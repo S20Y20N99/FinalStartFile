@@ -10,21 +10,55 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="<%=cp%>/css/join.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function()
+	{
+		$(".accept").css("display", "none");
+		
+		
+		$(".ibmatlabel").click(function()
+		{
+			$(".ibmatlabel").each(function()
+			{
+				var $this = $(this);
+				
+				if ($this.is(":checked"))
+				{
+					alert($this.val());
+				}
+			})
+		}) 
+	});
+</script>
+
+
 </head>
 <body>
 
-<c:import url="header_join.jsp"></c:import>
+
 
 <div class="joinContainer">
 	<!-- 회원가입타이틀영역 -->
-	<div class="joinTitle">
-			<h1>회원가입</h1>
+	<div class="joinTitleDiv">
+		<a href="" class="gotoMain">
+			<img class="gotoMainImg" src ="<%=cp %>/images/logo_text.png">
+		</a>
+		<div class="joinTitle">
+			<span id="joinTitle">회원가입</span>
+		</div>
+	</div>
+	
+	<div class="insertTitleDiv">
+		<span id="insertTitle">가입정보 기입</span>
 	</div>
 	
 	<!-- 회원정보기입영역 -->
-	<div class="userInfo">
-		<!-- 회원정보기입 항목 -->
-		<div class="joinList">
+	<div class="userInfoDiv">
+		<!-- 회원정보기입 항목 영역 -->
+		<div class="joinListDiv">
+		
 			<div class="name">
 				이름 <span class="require">*</span>
 			</div>
@@ -35,7 +69,7 @@
 			
 			<div class="tel">
 				핸드폰번호 <span class="require">*</span><br>
-				인증번호 
+				인증번호
 			</div>
 			
 			<div class="id">
@@ -50,56 +84,129 @@
 			<div class="nickname">
 				닉네임 <span class="require">*</span>
 			</div>
+			
+			<div class="email">
+				이메일
+			</div>
+			
 		</div>
 		
-		<!-- 회원정보 '기입' 영역 -->
-		<div class="joinInsert">
+		<!-- 회원정보 입력란 영역 -->
+		<div class="joinInsertDiv">
+		
 			<div class="userName">
 				<input type="text" id="userName">
 			</div>
 			<div class="userSsn">
-				<input type="text" id="userSsn1">-
+				<input type="text" id="userSsn1">&nbsp;&nbsp;-&nbsp;&nbsp;
 				<input type="password" id="userSsn2">
 			</div>
 			
 			<div class="userTel">
 				<input type="text" id="userTel">
-				<button type="button" id="telAccept">인증번호전송</button>
-				<span id="telSendText">인증번호가 전송되었습니다.</span><br>
+				<button type="button" id="telAccept" class="joinBtn">&nbsp;&nbsp;인증번호전송</button>
+				<i id="telSendText" class="accept">인증번호가 전송되었습니다.</i><br>
 				<input type="text" id="AcceptNum">
-				<button type="button" id="AcceptNumAccept">인증번호확인</button> 
-				<span id="telAcceptText">인증번호가 확인되었습니다.</span>
+				<button type="button" id="AcceptNumAccept" class="joinBtn">&nbsp;&nbsp;인증번호확인</button> 
+				<i id="telAcceptText" class="accept">인증번호가 확인되었습니다.</i>
 			</div>
 			
 			<div class="userId">
 				<input type="text" id="userId">
-				<button type="button" id="idAccept">중복검사</button><br>
+				<button type="button" id="idAccept" class="joinBtn">&nbsp;&nbsp;중복검사</button>
+				<i id="idAcceptText" class="accept">사용할 수 있는 아이디입니다.</i>
+				<br>
 			</div>
 			
 			<div class="userPw">
 				<input type="password" id="userPw1"><br>
 				<input type="password" id="userPw2">
+				<i id="pwAcceptText" class="accept">확인되었습니다.</i>
 			</div>
 			
 			<div class="userNickName">
 				<input type="text" id="userNickName">
-				<button type="button" id="nickNameAccept">중복검사</button><br>
+				<button type="button" id="nickNameAccept" class="joinBtn">&nbsp;&nbsp;중복검사</button>
+				<i id="nNAcceptText" class="accept">사용할 수 있는 닉네임입니다.</i>
+				<br>
 			</div>
+			
+			<div class="userEmail">
+				<input type="text" id="userEmail"> @ 
+				<select name="email" class="emailSelect">
+					<option value="self" selected="selected">직접입력</option>
+					<option value="naver">naver.com</option>
+					<option value="kakao">kakao.com</option>
+					<option value="google">google.com</option>
+					<option value="yahoo">yahoo.com</option>
+				</select>
+			</div>
+			
 		</div>
-		
-
-		
-
-		
-
-		
 	</div>
+	
 	
 	<!-- 회원입맛정보기입영역 -->
 	<div class="userIbmat">
+		<div class="ibmatTitleDiv">
+			<span id="ibmatTitle">입맛키워드 선택</span> &nbsp;&nbsp;&nbsp;&nbsp;
+			<i id="ibmatText">추후 가게 추천에 사용됩니다.</i>
+		</div>
 	
+		<div class="ibmatSelectDiv">
+			<div class="selectLeft">
+				<label class="ibmatlabel" for="ibmat1">
+					<input type="checkbox" class="ibmatCB" id="ibmat1">
+					진라면 순한맛 맵기가 좋아요
+				</label>
+				<br><br>
+				
+				
+				<label class="ibmatlabel" for="ibmat2">
+					<input type="checkbox" class="ibmatCB" id="ibmat2">
+					신라면 맵기가 좋아요
+				</label>
+				<br><br>
+			
+				<label class="ibmatlabel" for="ibmat3">
+					<input type="checkbox" class="ibmatCB" id="ibmat3">
+					불닭 맵기가 좋아요
+				</label>
+				<br><br>
+					
+			
+				<label class="ibmatlabel" for="ibmat4">
+					<input type="checkbox" class="ibmatCB" id="ibmat4">
+					담백한게 좋아요
+				</label>
+				<br><br>
+			</div>
+			
+			<div class="selectRight">	
+				<label class="ibmatlabel" for="ibmat5">
+					<input type="checkbox" class="ibmatCB" id="ibmat5">
+					단맛이 좋아요
+				</label>
+				<br><br>
+			
+				<label class="ibmatlabel" for="ibmat6">
+					<input type="checkbox" class="ibmatCB" id="ibmat6">
+					향신료는 어려워요
+				</label>
+				<br><br>
+				
+				<label class="ibmatlabel" for="ibmat7">
+					<input type="checkbox" class="ibmatCB" id="ibmat7">
+					매운맛을 좋아해요?
+				</label>
+			</div>
+		</div>
 	</div>
-
+	
+	<!-- 가입하기 버튼 -->
+	<div class="joinBtnDiv">
+		<button type="button" id="joinBtn" class="joinBtn">가입하기</button>
+	</div>
 </div>
 
 </body>

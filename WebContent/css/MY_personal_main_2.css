@@ -295,7 +295,7 @@ input::placeholder
 
 .searchName span
 {
-	color: #ef6351
+	color: #ef6351;
 }
 
 /* 더보기 */
@@ -335,6 +335,12 @@ input::placeholder
 span
 {
 	color: #ef6351;
+	font-weight: bold;
+}
+
+#searchArea span
+{
+	color: white;
 	font-weight: bold;
 }
 
@@ -499,6 +505,7 @@ span
 /* '비교함' 이름 영역의 span 밑줄 */
 .comNameDiv span
 {
+	color: #3a001e;
 	border-bottom: 3px solid #3a001e;
 }
 
