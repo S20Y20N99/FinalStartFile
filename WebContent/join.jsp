@@ -20,14 +20,17 @@
 		
 		$(".ibmatlabel").click(function()
 		{
-			$(".ibmatlabel").each(function()
+			$(".ibmatCB").each(function()
 			{
 				var $this = $(this);
 				
-				if ($this.is(":checked"))
-				{
-					alert($this.val());
-				}
+				var id = $this.attr("id");
+				
+				if ($this.is(":checked"))					
+					$(".ibmatlabel[for="+id+"]").css("border-bottom","3px solid #ef6351");
+				else
+					$(".ibmatlabel[for="+id+"]").css("border-bottom","none");
+					
 			})
 		}) 
 	});
