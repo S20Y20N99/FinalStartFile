@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
-/* 전체 컨테이너 */
+
 
 body
 {
 	margin:0;
 }
 
+/* 전체 컨테이너 */
 .joinContainer
 {
 	display: flex;
@@ -15,9 +16,70 @@ body
 	width: 100vw;
 }
 
-.userInfo
+h1
+{
+	margin-right: 35vw;
+}
+
+/* 회원정보기입 영역 */
+.userInfoDiv
 {
 	display: flex;
 	justify-content: space-evenly;
 	width: 50vw;
+	height: 40vh;
+}
+
+/* 회원정보기입 항목(List) 영역*/
+.joinListDiv
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+}
+
+.require
+{
+	color: red;
+}
+
+/* 회원정보기입 입력란 */
+.joinInsertDiv
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* 입맛키워드 선택란 */
+.userIbmat
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	padding-top: 10vh;
+	
+}
+
+.ibmatNameDiv
+{
+	margin-right: 10vw;
+	width: 40vw;
+}
+
+#ibmatTitle
+{
+	font-weight: bold;
+	font-size: 20pt;
+}
+
+.ibmatSelectDiv
+{
+	display: flex;
+    width: 35vw;
+    height: 50vh;
+    margin-top: 5vh;
+    justify-content: space-between;
+	
 }

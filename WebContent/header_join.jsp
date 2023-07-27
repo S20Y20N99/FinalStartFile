@@ -19,17 +19,16 @@
 		font-family: 'IBM Plex Sans KR', sans-serif;
 	}
 		
-	
+	/* 수정 */
 	header
 	{
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		width: 90vw;
-		height: 8vh;
-		margin-top: 1vh;
-		margin-left: 6vw;
-		margin-right: 4vw;
+	    justify-content: space-between;
+	    align-items: center;
+	    width: 80vw;
+	    height: 8vh;
+	    margin-top: 1vh;
+	    margin-left: 10vw;
 	}
 	
 	.gotoMain

@@ -22,9 +22,10 @@
 	</div>
 	
 	<!-- 회원정보기입영역 -->
-	<div class="userInfo">
-		<!-- 회원정보기입 항목 -->
-		<div class="joinList">
+	<div class="userInfoDiv">
+		<!-- 회원정보기입 항목 영역 -->
+		<div class="joinListDiv">
+		
 			<div class="name">
 				이름 <span class="require">*</span>
 			</div>
@@ -50,10 +51,16 @@
 			<div class="nickname">
 				닉네임 <span class="require">*</span>
 			</div>
+			
+			<div class="email">
+				이메일
+			</div>
+			
 		</div>
 		
-		<!-- 회원정보 '기입' 영역 -->
-		<div class="joinInsert">
+		<!-- 회원정보 입력란 영역 -->
+		<div class="joinInsertDiv">
+		
 			<div class="userName">
 				<input type="text" id="userName">
 			</div>
@@ -65,15 +72,17 @@
 			<div class="userTel">
 				<input type="text" id="userTel">
 				<button type="button" id="telAccept">인증번호전송</button>
-				<span id="telSendText">인증번호가 전송되었습니다.</span><br>
+				<span id="telSendText" class="accept">인증번호가 전송되었습니다.</span><br>
 				<input type="text" id="AcceptNum">
 				<button type="button" id="AcceptNumAccept">인증번호확인</button> 
-				<span id="telAcceptText">인증번호가 확인되었습니다.</span>
+				<span id="telAcceptText" class="accept">인증번호가 확인되었습니다.</span>
 			</div>
 			
 			<div class="userId">
 				<input type="text" id="userId">
-				<button type="button" id="idAccept">중복검사</button><br>
+				<button type="button" id="idAccept">중복검사</button>
+				<span id="idAcceptText" class="accept">사용할 수 있는 아이디입니다.</span>
+				<br>
 			</div>
 			
 			<div class="userPw">
@@ -83,23 +92,75 @@
 			
 			<div class="userNickName">
 				<input type="text" id="userNickName">
-				<button type="button" id="nickNameAccept">중복검사</button><br>
+				<button type="button" id="nickNameAccept">중복검사</button>
+				<span id="nNAcceptText" class="accept">사용할 수 있는 닉네임입니다.</span>
+				<br>
 			</div>
+			
+			<div class="userEmail">
+				<input type="text" id="userEmail">
+			</div>
+			
 		</div>
-		
-
-		
-
-		
-
-		
 	</div>
+	
 	
 	<!-- 회원입맛정보기입영역 -->
 	<div class="userIbmat">
+		<div class="ibmatNameDiv">
+			<span id="ibmatTitle">입맛키워드 선택</span> &nbsp;&nbsp;&nbsp;&nbsp;
+			<span id="ibmatText">추후 가게추천에 사용됩니다.</span>
+		</div>
 	
+		<div class="ibmatSelectDiv">
+			<div class="selectLeft">
+				<label for="ibmat1">
+					<input type="checkbox" class="ibmatCB" id="ibmat1">
+					진라면 순한맛 맵기가 좋아요
+				</label>
+				<br><br>
+				
+				
+				<label for="ibmat2">
+					<input type="checkbox" class="ibmatCB" id="ibmat2">
+					신라면 맵기가 좋아요
+				</label>
+				<br><br>
+			
+				<label for="ibmat3">
+					<input type="checkbox" class="ibmatCB" id="ibmat3">
+					불닭 맵기가 좋아요
+				</label>
+				<br><br>
+					
+			
+				<label for="ibmat4">
+					<input type="checkbox" class="ibmatCB" id="ibmat4">
+					담백한게 좋아요
+				</label>
+				<br><br>
+			</div>
+			
+			<div class="selectRight">	
+				<label for="ibmat5">
+					<input type="checkbox" class="ibmatCB" id="ibmat5">
+					단맛이 좋아요
+				</label>
+				<br><br>
+			
+				<label for="ibmat6">
+					<input type="checkbox" class="ibmatCB" id="ibmat6">
+					향신료는 어려워요
+				</label>
+				<br><br>
+				
+				<label for="ibmat7">
+					<input type="checkbox" class="ibmatCB" id="ibmat7">
+					매운맛을 좋아해요?
+				</label>
+			</div>
+		</div>
 	</div>
-
 </div>
 
 </body>
