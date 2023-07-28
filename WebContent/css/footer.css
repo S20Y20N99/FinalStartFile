@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* font-family: 'IBM Plex Sans KR', sans-serif; */
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+ */ 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500&display=swap');
+
+/* 전체 스크롤 없앰 */
+body
+{
+	margin: 0px;
+	font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+/*--------------------------------------------------------------------*/
+/* footer 영역 */
+
+footer
+{
+	display: flex;
+	justify-content: space-around;
+	width: 95.8vw;
+	height: 25vh;
+	font-size: 0.8vw;
+	color: #9b9b9b;
+	background-color: #f9f9f9;
+	padding-top: 20vh;
+	padding-left: 3vw;
+	margin-top: 5vh;
+	
+}
+
+.ftNav
+{
+	padding-top: 5vh;
+	padding-left: 4.5vw;
+}
+
+.ftStAdd
+{
+	padding-top: 5vh;
+	padding-right: 4vw;
+}
+
+#fsa
+{
+	background-color: #EF6351;
+	border: 1px #EF6351;
+	border-radius: 8px;
+	color: white;
+	font-size: 10pt;
+	font-family: 'IBM Plex Sans KR', sans-serif;
+	cursor: pointer;
+}
+
