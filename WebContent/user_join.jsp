@@ -8,8 +8,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="<%=cp%>/css/join.css">
+<title>user_join.jsp</title>
+<link rel="stylesheet" type="text/css" href="<%=cp%>/css/user_join.css">
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 <script type="text/javascript">
 
@@ -54,7 +54,7 @@
 	</div>
 	
 	<div class="insertTitleDiv">
-		<span id="insertTitle">가입정보 기입</span>
+		<span id="insertTitle">기본정보 기입</span>
 	</div>
 	
 	<!-- 회원정보기입영역 -->
@@ -71,8 +71,8 @@
 			</div>
 			
 			<div class="tel">
-				핸드폰번호 <span class="require">*</span><br>
-				인증번호
+				<div>핸드폰번호 <span class="require">*</span></div>
+				<div>인증번호</div>
 			</div>
 			
 			<div class="id">
@@ -80,8 +80,8 @@
 			</div>
 			
 			<div class="password">
-				비밀번호 <span class="require">*</span><br>
-				비밀번호 확인 <span class="require">*</span>
+				<div>비밀번호 <span class="require">*</span></div>
+				<div>비밀번호 확인 <span class="require">*</span></div>
 			</div>
 			
 			<div class="nickname">
@@ -101,37 +101,44 @@
 				<input type="text" id="userName">
 			</div>
 			<div class="userSsn">
-				<input type="text" id="userSsn1">&nbsp;&nbsp;-&nbsp;&nbsp;
+				<input type="text" id="userSsn1">&nbsp;&nbsp;-&nbsp;
 				<input type="password" id="userSsn2">
 			</div>
 			
 			<div class="userTel">
-				<input type="text" id="userTel">
-				<button type="button" id="telAccept" class="joinBtn">&nbsp;&nbsp;인증번호전송</button>
-				<i id="telSendText" class="accept">인증번호가 전송되었습니다.</i><br>
-				<input type="text" id="AcceptNum">
-				<button type="button" id="AcceptNumAccept" class="joinBtn">&nbsp;&nbsp;인증번호확인</button> 
-				<i id="telAcceptText" class="accept">인증번호가 확인되었습니다.</i>
+				<div>
+					<input type="text" id="userTel">
+					<button type="button" id="telAccept" class="joinBtn">인증번호전송</button>
+					<i id="telSendText" class="accept">인증번호가 전송되었습니다.</i>
+				</div>
+				<div>
+					<input type="text" id="AcceptNum">
+					<button type="button" id="AcceptNumAccept" class="joinBtn">인증번호확인</button> 
+					<i id="telAcceptText" class="accept">인증번호가 확인되었습니다.</i>
+				</div>
 			</div>
 			
 			<div class="userId">
 				<input type="text" id="userId">
-				<button type="button" id="idAccept" class="joinBtn">&nbsp;&nbsp;중복검사</button>
+				<button type="button" id="idAccept" class="joinBtn">중복검사</button>
 				<i id="idAcceptText" class="accept">사용할 수 있는 아이디입니다.</i>
 				<br>
 			</div>
 			
 			<div class="userPw">
-				<input type="password" id="userPw1"><br>
-				<input type="password" id="userPw2">
-				<i id="pwAcceptText" class="accept">확인되었습니다.</i>
+				<div>
+					<input type="password" id="userPw1">
+				</div>
+				<div>
+					<input type="password" id="userPw2">
+					<i id="pwAcceptText" class="accept">확인되었습니다.</i>
+				</div>
 			</div>
 			
 			<div class="userNickName">
 				<input type="text" id="userNickName">
-				<button type="button" id="nickNameAccept" class="joinBtn">&nbsp;&nbsp;중복검사</button>
+				<button type="button" id="nickNameAccept" class="joinBtn">중복검사</button>
 				<i id="nNAcceptText" class="accept">사용할 수 있는 닉네임입니다.</i>
-				<br>
 			</div>
 			
 			<div class="userEmail">

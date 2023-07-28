@@ -8,8 +8,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="<%=cp%>/css/join.css">
+<title>user_modify.jsp</title>
+<link rel="stylesheet" type="text/css" href="<%=cp%>/css/user_modify.css">
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 <script type="text/javascript">
 
@@ -40,21 +40,18 @@
 </head>
 <body>
 
-
+<c:import url="header_user_sh.jsp"></c:import>
 
 <div class="joinContainer">
 	<!-- 회원가입타이틀영역 -->
 	<div class="joinTitleDiv">
-		<a href="" class="gotoMain">
-			<img class="gotoMainImg" src ="<%=cp %>/images/logo_text.png">
-		</a>
 		<div class="joinTitle">
-			<span id="joinTitle">회원가입</span>
+			<span id="joinTitle">회원정보 수정</span>
 		</div>
 	</div>
 	
 	<div class="insertTitleDiv">
-		<span id="insertTitle">가입정보 기입</span>
+		<span id="insertTitle">기본정보 수정</span>
 	</div>
 	
 	<!-- 회원정보기입영역 -->
@@ -63,29 +60,28 @@
 		<div class="joinListDiv">
 		
 			<div class="name">
-				이름 <span class="require">*</span>
+				이름 
 			</div>
 			
 			<div class="ssn">
-				주민번호 <span class="require">*</span>
+				주민번호 
 			</div>
 			
 			<div class="tel">
-				핸드폰번호 <span class="require">*</span><br>
-				인증번호
+				<div>핸드폰번호</div>
 			</div>
 			
 			<div class="id">
-				아이디 <span class="require">*</span>
+				아이디
 			</div>
 			
 			<div class="password">
-				비밀번호 <span class="require">*</span><br>
-				비밀번호 확인 <span class="require">*</span>
+				<div>비밀번호</div>
+				<div>비밀번호 확인</div>
 			</div>
 			
 			<div class="nickname">
-				닉네임 <span class="require">*</span>
+				닉네임
 			</div>
 			
 			<div class="email">
@@ -98,38 +94,36 @@
 		<div class="joinInsertDiv">
 		
 			<div class="userName">
-				<input type="text" id="userName">
+				<input type="text" id="userName" readonly="readonly">
 			</div>
 			<div class="userSsn">
-				<input type="text" id="userSsn1">&nbsp;&nbsp;-&nbsp;&nbsp;
-				<input type="password" id="userSsn2">
+				<input type="text" id="userSsn1" readonly="readonly">&nbsp;&nbsp;-&nbsp;
+				<input type="password" id="userSsn2" readonly="readonly">
 			</div>
 			
 			<div class="userTel">
-				<input type="text" id="userTel">
-				<button type="button" id="telAccept" class="joinBtn">&nbsp;&nbsp;인증번호전송</button>
-				<i id="telSendText" class="accept">인증번호가 전송되었습니다.</i><br>
-				<input type="text" id="AcceptNum">
-				<button type="button" id="AcceptNumAccept" class="joinBtn">&nbsp;&nbsp;인증번호확인</button> 
-				<i id="telAcceptText" class="accept">인증번호가 확인되었습니다.</i>
+				<div>
+					<input type="text" id="userTel" readonly="readonly">
+				</div>
 			</div>
 			
 			<div class="userId">
 				<input type="text" id="userId">
-				<button type="button" id="idAccept" class="joinBtn">&nbsp;&nbsp;중복검사</button>
-				<i id="idAcceptText" class="accept">사용할 수 있는 아이디입니다.</i>
-				<br>
 			</div>
 			
 			<div class="userPw">
-				<input type="password" id="userPw1"><br>
-				<input type="password" id="userPw2">
-				<i id="pwAcceptText" class="accept">확인되었습니다.</i>
+				<div>
+					<input type="password" id="userPw1">
+				</div>
+				<div>
+					<input type="password" id="userPw2">
+					<i id="pwAcceptText" class="accept">확인되었습니다.</i>
+				</div>
 			</div>
 			
 			<div class="userNickName">
-				<input type="text" id="userNickName">
-				<button type="button" id="nickNameAccept" class="joinBtn">&nbsp;&nbsp;중복검사</button>
+				<input type="text" id="userNickName">&nbsp;&nbsp;
+				<button type="button" id="nickNameAccept" class="joinBtn">중복검사</button>
 				<i id="nNAcceptText" class="accept">사용할 수 있는 닉네임입니다.</i>
 				<br>
 			</div>
@@ -152,7 +146,7 @@
 	<!-- 회원입맛정보기입영역 -->
 	<div class="userIbmat">
 		<div class="ibmatTitleDiv">
-			<span id="ibmatTitle">입맛키워드 선택</span> &nbsp;&nbsp;&nbsp;&nbsp;
+			<span id="ibmatTitle">입맛키워드 수정</span> &nbsp;&nbsp;&nbsp;&nbsp;
 			<i id="ibmatText">추후 가게 추천에 사용됩니다.</i>
 		</div>
 	
@@ -208,9 +202,11 @@
 	
 	<!-- 가입하기 버튼 -->
 	<div class="joinBtnDiv">
-		<button type="button" id="joinBtn" class="joinBtn">가입하기</button>
+		<button type="button" id="joinBtn" class="joinBtn">수정하기</button>
 	</div>
 </div>
+
+<c:import url="footer.jsp"></c:import>
 
 </body>
 </html>

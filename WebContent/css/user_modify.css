@@ -5,7 +5,7 @@
 body
 {
 	font-family: 'IBM Plex Sans KR', sans-serif;
-	margin:v0;
+	margin: 0;
 }
 
 /* 전체 컨테이너 */
@@ -14,7 +14,7 @@ body
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 98vw;
+	width: 97vw;
 }
 
 /* 회원가입타이틀영역 */
@@ -30,7 +30,6 @@ body
 
 .joinTitle
 {
-	margin-left: 2vw;
 	padding-top: 1vh;
 }
 
@@ -52,50 +51,75 @@ body
 	font-weight: bold;
 }
 
-/* 회원정보기입 영역 */
+/* 회원정보수정 영역 */
 .userInfoDiv
 {
 	display: flex;
 	justify-content: space-evenly;
 	width: 50vw;
-	height: 50vh;
+	height: 60vh;
 	margin-top: 3vh;
     align-items: center;
-    font-size: 0.95vw;
+    font-size: 11pt;
 }
 
-/* 회원정보입력란 div 영역 조정 */
+/* 회원정보수정란 div 영역 조정 */
 .userName, .name, .userSsn, .ssn, .userId, .id, .userNickName, .nickname, .email, .userEmail
 {
 	height: 5vh;
+	justify-content : center;
 }
 
-.userPw, .password, .userTel, .tel
+.name, .ssn, .tel, .password, .nickname, .email
 {
-	height: 10vh;
+	padding-top: 5px;
 }
+
+.id
+{
+	padding-top: 12px;
+}
+
+.password, .userPw
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 9vh;
+}
+
 
 .userSsn, .userEmail
 {
 	color: #ef6351;
 }
 
-/* input 태그 높이 조정 */
-/* #userName, #userSsn1, #userSsn2, #userTel, #AcceptNum, #userId, #userPw1, #userPw2, #userNickName, #userEmail */
-input[type=text], input[type=password]
+#userName, #userSsn1, #userSsn2, #userTel, #userId
 {
 	height: 25px;
 	border: 1px solid #ef6351;
   	border-radius:8px;
-  	/* text-align: center; */
+  	text-align: center;
+  	background-color: #f4f0f1;
 }
 
-input:focus
+/* input 태그 높이 조정 */
+#userPw1, #userPw2, #userNickName, #userEmail
+/* input[type=text], input[type=password] */
+{
+	height: 25px;
+	border: 1px solid #ef6351;
+  	border-radius:8px;
+  	text-align: center;
+}
+
+#userName:focus, #userSsn1:focus, #userSsn2:focus, #userTel:focus, #AcceptNum:focus
+, #userId:focus, #userPw1:focus, #userPw2:focus, #userNickName:focus, #userEmail:focus
 {
 	height: 25px;
 	outline: none; 
 	border-color: #ef6351; 
-	/* box-shadow: 0 0 5px #ef6351; */
+	box-shadow: 0 0 5px #ef6351;
   	text-align: center;
 }
 
@@ -126,12 +150,13 @@ input:focus
   	text-align: center;
 }
 
-/* 회원정보기입 항목(List) 영역*/
+/* 회원정보수정 항목(List) 영역*/
 .joinListDiv
 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between; 
+	height: 55.5vh;
 }
 
 .require
@@ -141,7 +166,7 @@ input:focus
 
 .joinBtn
 {
-	width: 5.5vw;
+	width: 6.5vw;
 	height: 28px;
 	border-radius: 30px;
 	font-size: 0.6vw;
@@ -154,7 +179,7 @@ input:focus
 
 .joinBtn:hover
 {
-	width: 5.5vw;
+	width: 6.5vw;
 	height: 28px;
 	border-radius: 30px;
 	font-size: 0.6vw;
@@ -168,7 +193,7 @@ input:focus
 
 .joinBtn:active
 {
-	width: 5.5vw;
+	width: 6.5vw;
 	height: 28px;
 	border-radius: 30px;
 	font-size: 0.6vw;
@@ -180,13 +205,13 @@ input:focus
   	box-shadow: 0 0 10px #ef6351;
 }
 
-
-/* 회원정보기입 입력란 */
+/* 회원정보수정 입력란 */
 .joinInsertDiv
 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	height: 55vh;
 }
 
 .accept
@@ -195,7 +220,7 @@ input:focus
 	color: #ef6351;
 }
 
-/* 입맛키워드 선택란 */
+/* 입맛키워드 수정 선택란 */
 .userIbmat
 {
 	display: flex;
@@ -236,14 +261,14 @@ input:focus
     font-size: 0.9vw;
 }
 
-label:active
+.ibmatlabel:active
 {
 	border-bottom: 3px solid #ef6351;
 	padding: 1px;
 	cursor: pointer;
 }
 
-label:hover
+.ibmatlabel:hover
 {
 	border-bottom: 3px solid #ef6351;
 	padding: 1px;
@@ -257,7 +282,7 @@ label:hover
 	display: none;
 }
 
-/* 가입하기 버튼 영역 */
+/* 수정하기 버튼 영역 */
 .joinBtnDiv
 {
 	width: 50vw;
