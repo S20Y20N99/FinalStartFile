@@ -19,7 +19,7 @@
 </head>
 <body>
 
-<c:import url="header_userMain.jsp"></c:import>
+<c:import url="header_user_sh(main).jsp"></c:import>
 
 <div class=container>
 
@@ -45,23 +45,41 @@
 					<span>지역</span>		
 				</div>
 				<div id="regionCB">
-					<input type="checkbox" class="checkBox" name="region" value="seoul" />서울
-					<input type="checkbox" class="checkBox" name="region" value="busan" />부산
-					<input type="checkbox" class="checkBox" name="region" value="seoul" />대구
-					<input type="checkbox" class="checkBox" name="region" value="seoul" />인천
-					<input type="checkbox" class="checkBox" name="region" value="seoul" />광주
-					<input type="checkbox" class="checkBox" name="region" value="seoul" />대전
-					<input type="checkbox" class="checkBox" name="region" value="seoul" />울산
-					<input type="checkbox" class="checkBox" name="region" value="seoul" />세종
-					<input type="checkbox" class="checkBox" name="region" value="seoul" />경기
-					<input type="checkbox" class="checkBox" name="region" value="seoul" />충청북도
-					<input type="checkbox" class="checkBox" name="region" value="seoul" />충청남도<br>
-					<input type="checkbox" class="checkBox" name="region" value="seoul" />전라북도
-					<input type="checkbox" class="checkBox" name="region" value="seoul" />전라남도
-					<input type="checkbox" class="checkBox" name="region" value="seoul" />경상북도
-					<input type="checkbox" class="checkBox" name="region" value="seoul" />경상남도
-					<input type="checkbox" class="checkBox" name="region" value="seoul" />제주특별자치도
-					<input type="checkbox" class="checkBox" name="region" value="seoul" />강원특별자치도
+					<label for="seoul">                                                                      
+						<input type="checkbox" class="checkBox" name="region" value="seoul" id="seoul"/>서울
+					</label><label for="busan">
+						<input type="checkbox" class="checkBox" name="region" value="busan" id="busan" />부산
+					</label><label for="daegu">
+						<input type="checkbox" class="checkBox" name="region" value="daegu" id="daegu" />대구
+					</label><label for="incheon">
+						<input type="checkbox" class="checkBox" name="region" value="incheon" id="incheon" />인천
+					</label><label for="gwangju">
+						<input type="checkbox" class="checkBox" name="region" value="gwangju" id="gwangju" />광주
+					</label><label for="daejun">
+						<input type="checkbox" class="checkBox" name="region" value="daejun" id="daejun" />대전
+					</label><label for="ulsan">
+						<input type="checkbox" class="checkBox" name="region" value="ulsan" id="ulsan" />울산
+					</label><label for="saejong">
+						<input type="checkbox" class="checkBox" name="region" value="saejong" id="saejong" />세종
+					</label><label for="junggi">
+						<input type="checkbox" class="checkBox" name="region" value="junggi" id="junggi" />경기
+					</label><label for="chungbuk">
+						<input type="checkbox" class="checkBox" name="region" value="chungbuk" id="chungbuk"/>충청북도
+					</label><label for="chungnam">
+						<input type="checkbox" class="checkBox" name="region" value="chungnam" id="chungnam"/>충청남도<br>
+					</label><label for="junbuk">
+						<input type="checkbox" class="checkBox" name="region" value="junbuk" id="junbuk" />전라북도
+					</label><label for="junnam">
+						<input type="checkbox" class="checkBox" name="region" value="junnam" id="junnam" />전라남도
+					</label><label for="gyungbuk">
+						<input type="checkbox" class="checkBox" name="region" value="gyungbuk" id="gyungbuk"/>경상북도
+					</label><label for="gyungnam">
+						<input type="checkbox" class="checkBox" name="region" value="gyungnam" id="gyungnam"/>경상남도
+					</label><label for="jeju">
+						<input type="checkbox" class="checkBox" name="region" value="jeju" id="jeju" />제주특별자치도
+					</label><label for="gangwon">
+						<input type="checkbox" class="checkBox" name="region" value="gangwon" id="gangwon" />강원특별자치도
+					</label>
 				</div>
 			</div>
 			
@@ -70,13 +88,21 @@
 					<span>음식 카테고리</span>
 				</div>
 				<div id="catCB">
-					<input type="checkbox" class="checkBox" name="cat" value="korean" />한식
-					<input type="checkbox" class="checkBox" name="cat" value="chinese" />중식
-					<input type="checkbox" class="checkBox" name="cat" value="japanes" />일식
-					<input type="checkbox" class="checkBox" name="cat" value="western" />양식
-					<input type="checkbox" class="checkBox" name="cat" value="asian" />아시안음식
-					<input type="checkbox" class="checkBox" name="cat" value="mexican" />멕시코음식
-					<input type="checkbox" class="checkBox" name="cat" value="fusion" />퓨전음식
+					<label for="korean">
+						<input type="checkbox" class="checkBox" name="cat" value="korean" id="korean"/>한식
+					</label><label for="chinese">	
+						<input type="checkbox" class="checkBox" name="cat" value="chinese" id="chinese"/>중식
+					</label><label for="japanese">	                                                            
+						<input type="checkbox" class="checkBox" name="cat" value="japanese" id="japanese"/>일식
+					</label><label for="western">
+						<input type="checkbox" class="checkBox" name="cat" value="western" id="western"/>양식
+					</label><label for="asian">
+						<input type="checkbox" class="checkBox" name="cat" value="asian" id="asian"/>아시안음식
+					</label><label for="mexican">
+						<input type="checkbox" class="checkBox" name="cat" value="mexican" id="mexican"/>멕시코음식
+					</label><label for="fusion">
+						<input type="checkbox" class="checkBox" name="cat" value="fusion" id="fusion"/>퓨전음식
+					</label>
 				</div>
 			</div>
 			
@@ -85,12 +111,19 @@
 					<span>가게 키워드</span>
 				</div>
 				<div id="stKeyCB">
-					<input type="checkbox" class="checkBox" name="stKey" value="interior" />인테리어가 멋져요
-					<input type="checkbox" class="checkBox" name="stKey" value="alone" />혼자오기 좋아요
-					<input type="checkbox" class="checkBox" name="stKey" value="group" />단체모임하기 좋아요
-					<input type="checkbox" class="checkBox" name="stKey" value="large" />매장이 넓어요<br>
-					<input type="checkbox" class="checkBox" name="stKey" value="dog" />애견메뉴가 있어요
-					<input type="checkbox" class="checkBox" name="stKey" value="togo" />포장이 가능해요
+					<label for="interior">
+						<input type="checkbox" class="checkBox" name="stKey" value="interior" id="interior"/>인테리어가 멋져요
+					</label><label for="alone">
+						<input type="checkbox" class="checkBox" name="stKey" value="alone" id="alone"/>혼자오기 좋아요
+					</label><label for="group">
+						<input type="checkbox" class="checkBox" name="stKey" value="group" id="group"/>단체모임하기 좋아요
+					</label><label for="large">
+						<input type="checkbox" class="checkBox" name="stKey" value="large" id="large"/>매장이 넓어요<br>
+					</label><label for="dogMenu">
+						<input type="checkbox" class="checkBox" name="stKey" value="dogMenu" id="dogMenu"/>애견메뉴가 있어요
+					</label><label for="togo">
+						<input type="checkbox" class="checkBox" name="stKey" value="togo" id="togo"/>포장이 가능해요
+					</label>
 				</div>
 			</div>
 			

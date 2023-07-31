@@ -1,9 +1,20 @@
 @charset "UTF-8";
 
-* {
-	margin: 0px;
-	padding: 0px;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500&display=swap');
+
+body {
+	width: 97vw;
+	font-family: 'IBM Plex Sans KR', sans-serif;
+	margin: 0;
+	color: #3A001E;
+	/* 헤더 고정 padding-top: 10vh; */
 }
+
+/* 헤더 고정 보류 
+.header
+{
+	position: fixed;
+} */
 
 /* 전체 틀 */
 .container {
@@ -12,17 +23,13 @@
 	padding: 0px;
 }
 
-body {
-	width: 97vw;
-}
-
 .middle {
 	width: 97vw;
 	display: flex;
 }
 
 .jjimlist {
-	/* background-color: #f7f4ea; */
+	margin-bottom: 8vh;
 }
 
 .jimlist {
@@ -30,13 +37,50 @@ body {
 	justify-content: center;
 }
 
-.card {
+.jimstore
+{
+	width: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 11.5vw;
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+    border-radius: 5px;
+    background-color: #f7f4ea;
+    justify-content: space-around;
+}
+
+.jimstoreImg
+{
+	width: 9vw;
+    height: 8vw;
+}
+
+.jimstImg
+{
+	max-width: 9vw;
+    max-height: 9vw;
+    width: 9vw;
+    height: 9vw;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.jimstoreName
+{
+	padding-top: 0.5vw;
+}
+
+/* 찜한 목록 수정
+ .card {
 	width: 8vw;
 	background-color: #f7f4ea;
 	border: 1px solid #E09A8D;
 	margin: 1vw;
 	padding: 1vh;
-	/* background-color: #EF6851; */
+	background-color: #EF6851;
 }
 
 .card1 {
@@ -45,7 +89,7 @@ body {
 	border: 1px solid #E09A8D;
 	margin: 0.3vw;
 	padding: 0.5vh;
-	/* background-color: #EF6851; */
+	background-color: #EF6851;
 	justify-content: center;
 }
 
@@ -53,17 +97,19 @@ body {
 	border: 1px solid #E09A8D;
 	width: 100%;
 }
-
+ */
 .col-md-8 {
-	width: 69vw;
+	/* width: 69vw; */
+	width: 76vw;
+	padding: 0 3vw 0 3vw;
 }
 
 .col-md-2 {
-	width: 14vw;
+	width: 10vw;
 	/* height: 100vh; */
 	display: flex;
 	flex-direction: column;
-	padding-top: 1.5vh;
+/* 	padding-top: 1.5vh; */
 	font-size: 20px;
 	/* align-items: center; */
 	
@@ -82,10 +128,9 @@ body {
 }
 
 .stalist {
-	/* background-color: #f7f4ea; */
-	padding: 1vw;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 8vh;
 }
 
 .dao {
@@ -124,9 +169,7 @@ body {
 	display: flex;
 	/* flex-direction: column; */
 	background-color: #f7f4ea;
-	
-	margin-bottom: 3vh;
-	
+	margin-bottom: 15vh;
 }
 
 .id1 {
@@ -166,9 +209,9 @@ body {
 	color: white;
 }
 
-.card-text {
+/* .card-text {
 	text-align: center;
-}
+} */
 
 .ado {
 	display: flex;
@@ -180,27 +223,25 @@ body {
 	padding-right: 1vw;
 	
 }
-.adoi
-{
-	align-items: center;
-}
 
 .ta {
 	/* margin-top:1vh; */
 	display: flex;
 	justify-content: space-between;
-	padding-left: 1vw;
+    margin-bottom: 3vh;
 	padding-right: 1vw;
 }
 
 .title {
-	margin: 1vw;
-	/* font-weight: bold; */
-	font-size: 30px;
+	font-weight: bold;
+	font-size: 1.5vw;
+	width: 15vw;
 }
 
 .title2 {
-	font-size: 30px;
+	font-weight: bold;
+	font-size: 1.5vw;
+	width: 15vw;
 }
 
 .left-btn {
@@ -210,8 +251,23 @@ body {
 }
 .mypage
 {
-	padding: 1vw;
-	font-size: 3vw;
-	margin-top: 8vh;
-	color: #f7f4ea;
+	font-size: 2.8vw;
+	font-weight: bold;
+	margin-top: 3vh;
+	margin-bottom: 7vh;
+	/*color: #3A001E;*/
+}
+
+footer {
+    display: flex;
+    width: 94.9vw;
+    height: 15vh;
+    font-size: 0.8vw;
+    color: #9b9b9b;
+    background-color: #f9f9f9;
+    padding-top: 20vh;
+    padding-left: 4vw;
+    margin-top: 5vh;
+    justify-content: space-around;
+    align-items: flex-start;
 }

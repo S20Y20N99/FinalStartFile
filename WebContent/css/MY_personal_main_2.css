@@ -197,6 +197,11 @@ input::placeholder
 	top: 0.1vw;
 }
 
+#regionCB label, #catCB label, #stKeyCB label
+{
+	margin-right: 0.5vw;
+}
+
 /* ----------------------------------------------------------체크박스 */
 
 
