@@ -146,11 +146,6 @@
 				<div class="searchName">
 					▼ <span>검색 결과</span>
 				</div>
-				
-				<!-- 더보기 버튼 -->
-				<div class="searchMore">
-					<a href="#">+더보기&nbsp;&nbsp;&nbsp;&nbsp;</a>
-				</div>
 			</div>
 				
 				
@@ -583,6 +578,13 @@
 			</div><!-- searchList3 end -->
 		
 		</div><!-- resultStDiv end -->
+		
+						
+		<!-- 더보기 버튼 -->
+		<div class="searchMore">
+			<button type="button" id="searchMore" style="margin: auto;">검색 결과 더보기</button>
+		</div>
+		
 	</div><!-- mainDiv end -->
 	
 	

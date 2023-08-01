@@ -53,8 +53,8 @@ body
 #userPw1, #userPw2
 {
 	height: 25px;
-	border: 1px solid #ef6351;
-  	border-radius:8px;
+	border: 1px solid #dfdfdf;
+  	border-radius:5px;
   	text-align: center;
 }
 
@@ -78,13 +78,44 @@ body
 
 #pwInsertBtn
 {
-	width: 6.5vw;
+	width: 5.5vw;
 	height: 28px;
-	border-radius: 30px;
+	border-radius: 5px;
 	font-size: 0.6vw;
 	border: 1px solid #ef6351;
-  	background-color: #fef1ef;
+	background-color: white;
   	color: #ef6351;
   	cursor: pointer;
   	align-content: center;
+  	margin-left: 1vw;
+}
+
+#pwInsertBtn:hover
+{
+	width: 5.5vw;
+	height: 28px;
+	border-radius: 5px;
+	font-size: 0.6vw;
+	border: 1px solid #ef6351;
+  	color: #ef6351;
+  	cursor: pointer;
+  	align-content: center;
+  	margin-left: 1vw;
+  	box-shadow: 0 0 10px #ef6351;
+}
+
+
+#pwInsertBtn:active
+{
+	width: 5.5vw;
+	height: 28px;
+	border-radius: 5px;
+	font-size: 0.6vw;
+	border: 1px solid #ef6351;
+	background-color: #fff1f0;
+  	color: #ef6351;
+  	cursor: pointer;
+  	align-content: center;
+  	margin-left: 1vw;
+  	box-shadow: 0 0 10px #ef6351;
 }

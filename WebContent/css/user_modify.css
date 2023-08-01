@@ -23,7 +23,7 @@ body
 	display: flex;
 	font-weight: bold;
 	font-size: 30pt;
-	width: 50vw;
+	width: 45vw;
 	margin-bottom: 3vh;
 	margin-top: 10vh;
 }
@@ -41,7 +41,7 @@ body
 .insertTitleDiv
 {
 	background-color: #f7f4ea;
-	width: 50vw;
+	width: 45vw;
 	padding-left: 1vw;
 }
 
@@ -97,10 +97,10 @@ body
 #userName, #userSsn1, #userSsn2, #userTel, #userId
 {
 	height: 25px;
-	border: 1px solid #ef6351;
-  	border-radius:8px;
+	border: 1px solid #dfdfdf;
+  	border-radius:5px;
   	text-align: center;
-  	background-color: #f4f0f1;
+  	background-color: #faf8f9;
 }
 
 /* input 태그 높이 조정 */
@@ -108,8 +108,8 @@ body
 /* input[type=text], input[type=password] */
 {
 	height: 25px;
-	border: 1px solid #ef6351;
-  	border-radius:8px;
+	border: 1px solid #dfdfdf;
+  	border-radius:5px;
   	text-align: center;
 }
 
@@ -127,8 +127,8 @@ body
 .emailSelect
 {
 	height: 28px;
-	border: 1px solid #ef6351;
-  	border-radius:8px;
+	border: 1px solid #dfdfdf;
+  	border-radius:5px;
   	text-align: center;
 }
 
@@ -138,6 +138,7 @@ body
 	height: 28px;
 	border: 1px solid #ef6351;
   	border-radius:8px;
+  	box-shadow: 0 0 5px #ef6351;
   	text-align: center;
 }
 
@@ -148,7 +149,7 @@ body
 	border: 1px solid #ef6351;
   	border-radius:8px;
   	text-align: center;
-}
+} 
 
 /* 회원정보수정 항목(List) 영역*/
 .joinListDiv
@@ -166,42 +167,46 @@ body
 
 .joinBtn
 {
-	width: 6.5vw;
+	width: 5.5vw;
 	height: 28px;
-	border-radius: 30px;
+	border-radius: 5px;
 	font-size: 0.6vw;
 	border: 1px solid #ef6351;
-  	background-color: #fef1ef;
+  	background-color: white;
   	color: #ef6351;
   	cursor: pointer;
   	align-content: center;
+  	margin-left: 1vw;
 }
 
 .joinBtn:hover
 {
-	width: 6.5vw;
+	width: 5.5vw;
 	height: 28px;
-	border-radius: 30px;
+	border-radius: 5px;
 	font-size: 0.6vw;
 	border: 1px solid #ef6351;
-  	background-color: #fef1ef;
+  	background-color: white;
   	color: #ef6351;
   	cursor: pointer;
   	align-content: center;
+  	box-shadow: 0 0 10px #ef6351;
+  	margin-left: 1vw;
   	box-shadow: 0 0 10px #ef6351;
 }
 
 .joinBtn:active
 {
-	width: 6.5vw;
+	width: 5.5vw;
 	height: 28px;
-	border-radius: 30px;
+	border-radius: 5px;
 	font-size: 0.6vw;
 	border: 1px solid #ef6351;
-  	background-color: #f9ab9f;
+  	background-color: #fff1f0;
   	color: #ef6351;
   	cursor: pointer;
   	align-content: center;
+  	margin-left: 1vw;
   	box-shadow: 0 0 10px #ef6351;
 }
 
@@ -236,7 +241,7 @@ body
 	display: flex;
 	align-items: center;
 	background-color: #f7f4ea;
-	width: 50vw;
+	width: 45vw;
 	font-size: 10pt;
 	padding-left: 1vw;
 }
@@ -251,7 +256,7 @@ body
 .ibmatSelectDiv
 {
 	display: flex;
-    width: 40vw;
+    width: 35vw;
     height: 25vh;
     margin-top: 3vh;
     justify-content: space-around;

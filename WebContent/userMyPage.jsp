@@ -350,7 +350,7 @@ String cp = request.getContextPath();
 				<!-- 개인이 비교했던 가게목록 -->
 				<div class="stalist">
 					<div class="ta">
-						<div class="title2">비교했던 가게목록</div>
+						<div class="title">비교했던 가게목록</div>
 						<div class="ado">
 							<a href="" class="adoi">더보기+</a>
 						</div>
@@ -388,7 +388,7 @@ String cp = request.getContextPath();
 				<!-- 개인이 작성한 리뷰목록 -->
 				<div class="stalist">
 					<div class="ta">
-						<div class="title2">작성한 리뷰목록</div>
+						<div class="title">작성한 리뷰목록</div>
 						<div class="ado">
 							<a href="" class="adoi">더보기+</a>
 						</div>

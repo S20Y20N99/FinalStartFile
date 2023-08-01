@@ -145,6 +145,7 @@
 <body>
 
 <div id="header">
+	<c:import url="header_user_sh(main).jsp"></c:import>
 </div>
 
 <div id="fullscreen">

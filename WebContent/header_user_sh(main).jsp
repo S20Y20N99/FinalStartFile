@@ -54,11 +54,6 @@
 		width: 7vw;
 	}
 	
-	#alarm
-	{
-		padding-top: 0.2vh;
-	}
-	
 	a
 	{
 		text-decoration-line: none;
@@ -66,9 +61,9 @@
 	
 	#mypage a
 	{
-		font-size: 1.2vw;
-		font-weight: bold;
-		color: black;
+		font-size: 0.9vw;
+    	font-weight: bold;
+    	color: black;
 	}
 	
 	.sub_list
@@ -124,6 +119,13 @@
 	{
 		list-style-type: none;
 		padding: 0;
+	}
+	
+	.alarm_cl
+	{
+		font-size: 0.9vw;
+    	font-weight: bold;
+    	color: black;
 	}
 </style>
 
