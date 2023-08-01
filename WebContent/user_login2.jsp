@@ -25,18 +25,19 @@
 	/* 전체 */
 	#fullscreen 
 	{
-		width: 100vw;
-	    height: 100vh;
+		width: 98vw;
+	    /* height: 800px; */
 	    display: flex;
 	    flex-direction: column;
 	    justify-content: flex-start;
 	    align-items: center;
+	    margin: 0;
 	}
 	
 	/* 로고 */
 	#logoArea
 	{
-		width: 300px;
+	    width: 300px;
 	    height: 200px;
 	    float: left;
 	    margin-top: 10vh;
@@ -52,11 +53,11 @@
 	/* 전체로그인구역 */
 	#loginArea
 	{
-		display: flex;
+	    display: flex;
 	    flex-direction: column;
 	    justify-content: center;
 	    width: 350px;
-	    height: 40vh;
+	    height: 380px;
 	    /* float: right; */
 	    align-items: center;
 	    border: 3px solid #f7f4ea;
@@ -71,8 +72,8 @@
 	/* id+pw+loginBtn */
 	#loginDiv
 	{
-		width: 300px;
-	    height: 23vh;
+	    width: 300px;
+	    height: 220px;
 	    padding-top: 50px;
 	    display: flex;
 	    flex-direction: column;
@@ -181,6 +182,21 @@
 	  	box-shadow: 0 0 10px #ef6351;
 	}
 
+	footer
+	{
+		display: flex;
+	    justify-content: space-around;
+	    width: 99.8vw;
+	    height: 25vh;
+	    font-size: 0.8vw;
+	    color: #9b9b9b;
+	    background-color: #f9f9f9;
+	    margin-top: 20vh;
+	    padding-bottom: 10vh;
+	    padding-top: 10vh;
+	    padding-left: 3vw;
+	    /* padding-right: 5vh;
+	}
 
 </style>
 </head>
@@ -211,7 +227,34 @@
 			
 		</form>
 	</div>
+	
+	<footer>
+		<div class="ftCompany">
+			회사정보<br>
+			상호 : 레드홀릭<br>
+			대표 : 한종훈<br>
+			주소 : 서울 성동구 성덕정 5길 10, 1층<br>
+			개인정보관리 책임자 : 이숙희 (madhjh@redholic.com)<br>
+		</div>
+		
+		<div class="ftNav">
+			회사소개   |   쇼핑가이드   |   개인정보보호정책   |   이용약관
+		</div>
+		
+		<div class="ftCs">
+		
+		</div>
+		
+		<div class="ftStAdd">
+			<!-- <button type="button" id="fsa" class="fsaBtn">사업자 등록하기</button> -->
+		</div>
+	
+	</footer>	
+	
 </div>
+
+
+
 
 </body>
 </html>
