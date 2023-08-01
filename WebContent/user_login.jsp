@@ -139,7 +139,7 @@
 
 <div id="fullscreen">
 	<div id="logoArea">
-		<img src="<%=cp %>/images/yamokja.png" id="logo">
+		<img src="<%=cp %>/images/logo_text.png" id="logo">
 	</div>
 
 	<div id="loginArea">
