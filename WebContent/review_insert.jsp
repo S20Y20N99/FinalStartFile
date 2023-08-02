@@ -20,14 +20,14 @@
 
 	<!-- 리뷰작성 타이틀 -->
 	<div class="bigTitle reviewTitleDiv">
-		리뷰 작성
+		&nbsp;&nbsp;리뷰 작성
 	</div>
 	
 	<!-- 리뷰 키워드 선택 -->
 	<div class="box1 reviewKeywordDiv">
 		<!-- 리뷰 키워드 선택 타이틀 -->
 		<div class="middleTitle reviewKeywordTitleDiv">
-			리뷰 키워드 선택
+			&nbsp;&nbsp;리뷰 키워드 선택
 		</div>
 		
 		<!-- 리뷰 키워드 선택 CB -->
@@ -107,16 +107,16 @@
 	<div class="box2 searchKeywordDiv">
 		<!-- 검색 키워드 타이틀 -->
 		<div class="middleTitle searchKeywordTitleDiv">
-			검색 키워드
+			&nbsp;&nbsp;검색 키워드
 		</div>
 		
 		<!-- 검색 키워드 작성란 -->
 		<div class="searchKeyword">
-			1. &nbsp;&nbsp;&nbsp; <input type="text" class="searchKeywordtxt">
-			2. &nbsp;&nbsp;&nbsp; <input type="text" class="searchKeywordtxt">
-			3. &nbsp;&nbsp;&nbsp; <input type="text" class="searchKeywordtxt">
-			4. &nbsp;&nbsp;&nbsp; <input type="text" class="searchKeywordtxt">
-			5. &nbsp;&nbsp;&nbsp; <input type="text" class="searchKeywordtxt">
+			1. <input type="text" class="searchKeywordtxt">
+			2. <input type="text" class="searchKeywordtxt">
+			3. <input type="text" class="searchKeywordtxt">
+			4. <input type="text" class="searchKeywordtxt">
+			5. <input type="text" class="searchKeywordtxt">
 		</div>
 	</div>
 	
@@ -125,11 +125,11 @@
 	
 		<!-- 별점 타이틀 -->
 		<div class="middleTitle starTitleDiv">
-			별점
+			&nbsp;&nbsp;별점
 		</div>
 		<!-- 별점 선택 -->
 		<div class="starSelectDiv">
-			<select name="" id="">
+			<select name="" id="starSelect">
 				<option id="0" selected="selected">----별점 선택----</option>
 				<option id="1">★</option>
 				<option id="2">★★</option>
@@ -144,12 +144,12 @@
 	<div class="box1 reviewDiv">
 		<!-- 리뷰작성 타이틀 -->
 		<div class="middleTitle reviewInsertTitleDiv">
-			리뷰작성
+			&nbsp;&nbsp;리뷰작성
 		</div>
 		
 		<!-- 리뷰작성란 -->
 		<div class="reviewInsertDiv">
-			<textarea rows="6" cols="120"></textarea>
+			<textarea rows="6" cols="135"></textarea>
 		</div>
 		
 		<!-- 리뷰사진 업로드 버튼 -->
@@ -159,7 +159,7 @@
 	</div>
 	
 	<!-- 리뷰작성완료 버튼 -->
-	<div class="reviewInsertDiv">
+	<div class="reviewInsertBtnDiv">
 		<button id="submitBtn" class="reviewBtn">작성완료</button>
 	</div>
 
