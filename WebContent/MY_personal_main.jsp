@@ -61,141 +61,40 @@
 				<!-- 가게 구역 -->
 				<div class="storeList">
 				
-					<div class="store">
-						<!-- 가게 사진 + 찜, 비교함추가 -->
-						<div class="stImgBtnDiv">
-							<div class="stImgDiv">
-								<img class="stImg" src="<%=cp%>/images/store_img01.png">
-							</div>
-							
-							<div class="likeComAddBtn">
-								<button type="button" class="comAddBtn">+</button>
-								<button type="button" class="likeAddBtn">❤️</button>					
-							</div>
-
-						</div>
-						
-						<div class="name_reviewDiv">
-							<!-- 가게 명 -->
-							<div class="stName">
-								가게 1
-							</div>
-							
-							 <!-- 별점 평점(리뷰 수) -->
-							<div class="startReviewDivs">
-								<span>4.5</span>(450)
-							</div>
-						</div>
-					</div>
+											
+					<c:forEach var="ibmat" items="${ibmatList }">
 					
-					<div class="store">
-						<!-- 가게 사진 + 찜, 비교함추가 -->
-						<div class="stImgBtnDiv">
-							<div class="stImgDiv">
-								<img class="stImg" src="<%=cp%>/images/store_img01.png">
+						<div class="store">
+							<!-- 가게 사진 + 찜, 비교함추가 -->
+	
+							<div class="stImgBtnDiv">
+								<div class="stImgDiv">
+									<img class="stImg" src="<%=cp%>/images/${ibmat.photo_link}">
+								</div>
+								
+								<div class="likeComAddBtn">
+									<button type="button" class="comAddBtn">+</button>
+									<button type="button" class="likeAddBtn">❤️</button>					
+								</div>
+	
 							</div>
 							
-							<div class="likeComAddBtn">
-								<button type="button" class="comAddBtn">+</button>
-								<button type="button" class="likeAddBtn">❤️</button>					
+							<div class="name_reviewDiv">
+								<!-- 가게 명 -->
+								<div class="stName">
+									${ibmat.st_name }
+								</div>
+								
+								 <!-- 별점 평점(리뷰 수) -->
+								<div class="startReviewDivs">
+									<span>${ibmat.star_avg }</span>(${ibmat.rv_count })
+								</div>
 							</div>
-
 						</div>
 						
-						<div class="name_reviewDiv">
-							<!-- 가게 명 -->
-							<div class="stName">
-								가게 1
-							</div>
-							
-							 <!-- 별점 평점(리뷰 수) -->
-							<div class="startReviewDivs">
-								<span>4.5</span>(450)
-							</div>
-						</div>
-					</div>
-					
-					<div class="store">
-						<!-- 가게 사진 + 찜, 비교함추가 -->
-						<div class="stImgBtnDiv">
-							<div class="stImgDiv">
-								<img class="stImg" src="<%=cp%>/images/store_img01.png">
-							</div>
-							
-							<div class="likeComAddBtn">
-								<button type="button" class="comAddBtn">+</button>
-								<button type="button" class="likeAddBtn">❤️</button>					
-							</div>
+					</c:forEach>
 
-						</div>
-						
-						<div class="name_reviewDiv">
-							<!-- 가게 명 -->
-							<div class="stName">
-								가게 1
-							</div>
-							
-							 <!-- 별점 평점(리뷰 수) -->
-							<div class="startReviewDivs">
-								<span>4.5</span>(450)
-							</div>
-						</div>
-					</div>
-					
-					<div class="store">
-						<!-- 가게 사진 + 찜, 비교함추가 -->
-						<div class="stImgBtnDiv">
-							<div class="stImgDiv">
-								<img class="stImg" src="<%=cp%>/images/store_img01.png">
-							</div>
-							
-							<div class="likeComAddBtn">
-								<button type="button" class="comAddBtn">+</button>
-								<button type="button" class="likeAddBtn">❤️</button>						
-							</div>
-
-						</div>
-						
-						<div class="name_reviewDiv">
-							<!-- 가게 명 -->
-							<div class="stName">
-								가게 1
-							</div>
-							
-							 <!-- 별점 평점(리뷰 수) -->
-							<div class="startReviewDivs">
-								<span>4.5</span>(450)
-							</div>
-						</div>
-					</div><!-- store end -->
-					
-					<div class="store">
-						<!-- 가게 사진 + 찜, 비교함추가 -->
-						<div class="stImgBtnDiv">
-							<div class="stImgDiv">
-								<img class="stImg" src="<%=cp%>/images/store_img01.png">
-							</div>
-							
-							<div class="likeComAddBtn">
-								<button type="button" class="comAddBtn">+</button>
-								<button type="button" class="likeAddBtn">❤️</button>						
-							</div>
-
-						</div>
-						
-						<div class="name_reviewDiv">
-							<!-- 가게 명 -->
-							<div class="stName">
-								가게 1
-							</div>
-							
-							 <!-- 별점 평점(리뷰 수) -->
-							<div class="startReviewDivs">
-								<span>4.5</span>(450)
-							</div>
-						</div>
-					</div><!-- store end -->
-				</div><!-- storeList end -->
+				</div><!-- storeList end --> 
 			</div><!-- personalIbmatDiv end -->
 			
 			<!-- 찜기반 추천 -->
@@ -208,34 +107,37 @@
 				<!-- 가게 구역 -->
 				<div class="storeList">
 				
-					<div class="store">
-						<!-- 가게 사진 + 찜, 비교함추가 -->
-						<div class="stImgBtnDiv">
-							<div class="stImgDiv">
-								<img class="stImg" src="<%=cp%>/images/store_img01.png">
-							</div>
-							
-							<div class="likeComAddBtn">
-								<button type="button" class="comAddBtn">+</button>
-								<button type="button" class="likeAddBtn">❤️</button>					
-							</div>
-
-						</div>
-						
-						<div class="name_reviewDiv">
-							<!-- 가게 명 -->
-							<div class="stName">
-								가게 1
-							</div>
-							
-							 <!-- 별점 평점(리뷰 수) -->
-							<div class="startReviewDivs">
-								<span>4.5</span>(450)
-							</div>
-						</div>
-					</div>
+					<c:forEach var="jjim" items="${jjim_list }">
 					
-					<div class="store">
+						<div class="store">
+							<!-- 가게 사진 + 찜, 비교함추가 -->
+							<div class="stImgBtnDiv">
+								<div class="stImgDiv">
+									<img class="stImg" src="<%=cp%>/images/${jjim.photo_link}">
+								</div>
+								
+								<div class="likeComAddBtn">
+									<button type="button" class="comAddBtn">+</button>
+									<button type="button" class="likeAddBtn">❤️</button>					
+								</div>
+	
+							</div>
+							
+							<div class="name_reviewDiv">
+								<!-- 가게 명 -->
+								<div class="stName">
+									${jjim.st_name }
+								</div>
+								
+								 <!-- 별점 평점(리뷰 수) -->
+								<div class="startReviewDivs">
+									<span>${jjim.star_avg }</span>(${jjim.rv_count })
+								</div>
+							</div>
+						</div>
+					</c:forEach>
+							
+					<%-- <div class="store">
 						<!-- 가게 사진 + 찜, 비교함추가 -->
 						<div class="stImgBtnDiv">
 							<div class="stImgDiv">
@@ -341,7 +243,7 @@
 								<span>4.5</span>(450)
 							</div>
 						</div>
-					</div><!-- store end -->
+					</div><!-- store end --> --%>
 				</div><!-- storeList end -->
 			</div>
 			
@@ -353,35 +255,35 @@
 				
 				<!-- 가게 구역 -->
 				<div class="storeList">
-				
-					<div class="store">
-						<!-- 가게 사진 + 찜, 비교함추가 -->
-						<div class="stImgBtnDiv">
-							<div class="stImgDiv">
-								<img class="stImg" src="<%=cp%>/images/store_img01.png">
+					<c:forEach var="hot" items="${hot_list }">
+						<div class="store">
+							<!-- 가게 사진 + 찜, 비교함추가 -->
+							<div class="stImgBtnDiv">
+								<div class="stImgDiv">
+									<img class="stImg" src="<%=cp%>/images/${hot.photo_link}">
+								</div>
+								
+								<div class="likeComAddBtn">
+									<button type="button" class="comAddBtn">+</button>
+									<button type="button" class="likeAddBtn">❤️</button>						
+								</div>
+	
 							</div>
 							
-							<div class="likeComAddBtn">
-								<button type="button" class="comAddBtn">+</button>
-								<button type="button" class="likeAddBtn">❤️</button>						
-							</div>
-
-						</div>
-						
-						<div class="name_reviewDiv">
-							<!-- 가게 명 -->
-							<div class="stName">
-								가게 1
-							</div>
-							
-							 <!-- 별점 평점(리뷰 수) -->
-							<div class="startReviewDivs">
-								<span>4.5</span>(450)
+							<div class="name_reviewDiv">
+								<!-- 가게 명 -->
+								<div class="stName">
+									${hot.st_name }
+								</div>
+								
+								 <!-- 별점 평점(리뷰 수) -->
+								<div class="startReviewDivs">
+									<span>${hot.star_avg }</span>(${hot.rv_count })
+								</div>
 							</div>
 						</div>
-					</div>
-					
-					<div class="store">
+					</c:forEach>
+					<%-- <div class="store">
 						<!-- 가게 사진 + 찜, 비교함추가 -->
 						<div class="stImgBtnDiv">
 							<div class="stImgDiv">
@@ -487,7 +389,7 @@
 								<span>4.5</span>(450)
 							</div>
 						</div>
-					</div><!-- store end -->
+					</div><!-- store end --> --%>
 				</div><!-- storeList end -->
 			</div>
 		

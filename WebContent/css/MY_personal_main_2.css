@@ -212,6 +212,50 @@ input::placeholder
 }
 
 
+#secondSearchBtn
+{
+	width: 100px;
+	height: 35px;
+	float: left;
+	align-content: center;
+	font-size: 9pt;
+	border: 1px solid #ef6351;
+  	border-radius: 8px;
+  	background-color: #ef6351;
+  	color: white;
+  	cursor: pointer;
+}
+
+#secondSearchBtn:hover
+{
+	width: 100px;
+	height: 35px;
+	float: left;
+	align-content: center;
+	font-size: 9pt;
+	border: 1px solid #ef6351;
+  	border-radius: 8px;
+  	background-color: #ef6351;
+  	color: white;
+  	cursor: pointer;
+  	border-color: #ef6351; 
+	box-shadow: 0 0 10px #ef6351;
+}
+
+#secondSearchBtn:active
+{
+	width: 100px;
+	height: 35px;
+	float: left;
+	align-content: center;
+	font-size: 9pt;
+  	border-radius: 8px;
+  	cursor: pointer;
+  	background-color: #e73d34;
+	border-color: #e73d34; 
+	color: #ef6351;
+	box-shadow: 0 0 10px #ef6351;
+}
 
 /* 가게 검색 결과 구역 DIV(검색결과/더보기 + searchList1,2,3 */
 #resultStDiv

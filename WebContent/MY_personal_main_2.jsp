@@ -37,7 +37,10 @@
 			<!-- 검색창 + 검색버튼 -->
 			<div id="inputDiv">
 				<!-- 검색창 -->
-				<input type="text" id="typingArea" name="typingArea" class="insert" placeholder=" 떡볶이">
+				<input type="text" id="typingArea" name="typingArea" class="insert" value=" 떡볶이">
+				<button type="button" id="searchBtn" name="searchBtn">					
+					<img id="searchIcon" src="<%=cp %>/images/search_icon.png">
+				</button>
 			</div>
 			
 			<div id="checkRegion">
@@ -128,9 +131,9 @@
 			</div>
 			
 			<!-- 검색버튼 -->
-			<div id="searchBtnDiv">
-				<button type="button" id="searchBtn" name="searchBtn">					
-					<img id="searchIcon" src="<%=cp %>/images/search_icon.png">
+			<div id="secondSearchBtnDiv">
+				<button type="button" id="secondSearchBtn" name="secondSearchBtn">					
+				필터 검색하기
 				</button>
 			</div>
 			
@@ -151,144 +154,40 @@
 				
 			<!-- 검색 결과 -->
 			<div id="searchList1">
-			
+
 				<!-- 가게 구역 -->
 				<div class="storeList">
+					<c:forEach var="store" items="${searchList}">
 				
-					<div class="store">
-						<!-- 가게 사진 + 찜, 비교함추가 -->
-						<div class="stImgBtnDiv">
-							<div class="stImgDiv">
-								<img class="stImg" src="<%=cp%>/images/store_img01.png">
+						<div class="store">
+							<!-- 가게 사진 + 찜, 비교함추가 -->
+							<div class="stImgBtnDiv">
+								<div class="stImgDiv">
+									<img class="stImg" src="<%=cp%>/images/store_img01.png">
+								</div>
+								
+								<div class="likeComAddBtn">
+									<button type="button" class="comAddBtn">+</button>
+									<button type="button" class="likeAddBtn">❤️</button>				
+								</div>
+	
 							</div>
 							
-							<div class="likeComAddBtn">
-								<button type="button" class="comAddBtn">+</button>
-								<button type="button" class="likeAddBtn">❤️</button>				
-							</div>
-
-						</div>
-						
-						<div class="name_reviewDiv">
-							<!-- 가게 명 -->
-							<div class="stName">
-								가게 1
-							</div>
-							
-							 <!-- 별점 평점(리뷰 수) -->
-							<div class="startReviewDivs">
-								<span>4.5</span>(450)
+							<div class="name_reviewDiv">
+								<!-- 가게 명 -->
+								<div class="stName">
+									${store.st_name}
+								</div>
+								
+								 <!-- 별점 평점(리뷰 수) -->
+								<div class="startReviewDivs">
+									<span>${store.star_avg}</span>(${store.rv_count})
+								</div>
 							</div>
 						</div>
-					</div>
 					
-					<div class="store">
-						<!-- 가게 사진 + 찜, 비교함추가 -->
-						<div class="stImgBtnDiv">
-							<div class="stImgDiv">
-								<img class="stImg" src="<%=cp%>/images/store_img01.png">
-							</div>
-							
-							<div class="likeComAddBtn">
-								<button type="button" class="comAddBtn">+</button>
-								<button type="button" class="likeAddBtn">❤️</button>	
-							</div>
-
-						</div>
-						
-						<div class="name_reviewDiv">
-							<!-- 가게 명 -->
-							<div class="stName">
-								가게 1
-							</div>
-							
-							 <!-- 별점 평점(리뷰 수) -->
-							<div class="startReviewDivs">
-								<span>4.5</span>(450)
-							</div>
-						</div>
-					</div>
+					</c:forEach>
 					
-					<div class="store">
-						<!-- 가게 사진 + 찜, 비교함추가 -->
-						<div class="stImgBtnDiv">
-							<div class="stImgDiv">
-								<img class="stImg" src="<%=cp%>/images/store_img01.png">
-							</div>
-							
-							<div class="likeComAddBtn">
-								<button type="button" class="comAddBtn">+</button>
-								<button type="button" class="likeAddBtn">❤️</button>					
-							</div>
-
-						</div>
-						
-						<div class="name_reviewDiv">
-							<!-- 가게 명 -->
-							<div class="stName">
-								가게 1
-							</div>
-							
-							 <!-- 별점 평점(리뷰 수) -->
-							<div class="startReviewDivs">
-								<span>4.5</span>(450)
-							</div>
-						</div>
-					</div>
-					
-					<div class="store">
-						<!-- 가게 사진 + 찜, 비교함추가 -->
-						<div class="stImgBtnDiv">
-							<div class="stImgDiv">
-								<img class="stImg" src="<%=cp%>/images/store_img01.png">
-							</div>
-							
-							<div class="likeComAddBtn">
-								<button type="button" class="comAddBtn">+</button>
-								<button type="button" class="likeAddBtn">❤️</button>						
-							</div>
-
-						</div>
-						
-						<div class="name_reviewDiv">
-							<!-- 가게 명 -->
-							<div class="stName">
-								가게 1
-							</div>
-							
-							 <!-- 별점 평점(리뷰 수) -->
-							<div class="startReviewDivs">
-								<span>4.5</span>(450)
-							</div>
-						</div>
-					</div><!-- store end -->
-					
-					<div class="store">
-						<!-- 가게 사진 + 찜, 비교함추가 -->
-						<div class="stImgBtnDiv">
-							<div class="stImgDiv">
-								<img class="stImg" src="<%=cp%>/images/store_img01.png">
-							</div>
-							
-							<div class="likeComAddBtn">
-								<button type="button" class="comAddBtn">+</button>
-								<button type="button" class="likeAddBtn">❤️</button>					
-							</div>
-
-						</div>
-						
-						<div class="name_reviewDiv">
-							<!-- 가게 명 -->
-							<div class="stName">
-								가게 1
-							</div>
-							
-							 <!-- 별점 평점(리뷰 수) -->
-							<div class="startReviewDivs">
-								<span>4.5</span>(450)
-							</div>
-						</div>
-					</div><!-- store end -->
 				</div><!-- storeList end -->
 			</div><!-- searchList1 end -->
 			

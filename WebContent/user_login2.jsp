@@ -1,3 +1,4 @@
+
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
@@ -37,17 +38,17 @@
 	/* 로고 */
 	#logoArea
 	{
-	    width: 300px;
-	    height: 200px;
+	    width: 200px;
+	    height: 150px;
 	    float: left;
 	    margin-top: 10vh;
-	    margin-bottom: 3vh;
+	    /* margin-bottom: 3vh; */
 	}
 	
 	#logo
 	{
-		max-height: 300px;
-		max-width: 300px;
+		max-height: 200px;
+    	max-width: 200px;
 	}
 	
 	/* 전체로그인구역 */
